@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShoreSynk - DevOps & Integration Consultancy</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Light gray background */
+            color: #334155; /* Darker text color */
+        }
+        .gradient-bg {
+            background: linear-gradient(to right, #1a202c, #2a4365); /* Darker, sophisticated blue gradient */
+        }
+        .btn-primary {
+            @apply bg-blue-700 text-white px-8 py-4 rounded-full shadow-lg hover:bg-blue-800 transition duration-300 ease-in-out font-semibold text-lg;
+        }
+        .card {
+            @apply bg-white rounded-2xl shadow-xl p-8 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-2xl;
+        }
+        .section-title {
+            @apply text-5xl font-extrabold text-center text-gray-800 mb-16 leading-tight;
+        }
+        .subtitle {
+            @apply text-xl text-gray-600 text-center mb-12 max-w-3xl mx-auto;
+        }
+        .icon-svg {
+            width: 48px;
+            height: 48px;
+            color: #2563eb; /* Blue-700 */
+            margin-bottom: 1rem;
+        }
+        .testimonial-card {
+            @apply bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center text-center;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md py-5">
+        <nav class="container mx-auto px-8 flex justify-between items-center">
+            <a href="#" class="text-3xl font-extrabold text-blue-900">ShoreSynk</a>
+            <div class="hidden md:flex space-x-10">
+                <a href="#services" class="text-gray-700 hover:text-blue-800 transition duration-300 font-medium text-lg">Services</a>
+                <a href="#technologies" class="text-gray-700 hover:text-blue-800 transition duration-300 font-medium text-lg">Technologies</a>
+                <a href="#about" class="text-gray-700 hover:text-blue-800 transition duration-300 font-medium text-lg">About Us</a>
+                <a href="#testimonials" class="text-gray-700 hover:text-blue-800 transition duration-300 font-medium text-lg">Testimonials</a>
+                <a href="#contact" class="text-gray-700 hover:text-blue-800 transition duration-300 font-medium text-lg">Contact</a>
+            </div>
+            <button class="md:hidden text-gray-700 focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-24 md:py-40 rounded-b-3xl shadow-2xl relative overflow-hidden">
+        <div class="container mx-auto px-8 text-center relative z-10">
+            <h1 class="text-6xl md:text-7xl font-extrabold leading-tight mb-8 drop-shadow-lg">
+                Driving Innovation Through DevOps & Seamless Integration
+            </h1>
+            <p class="text-2xl md:text-3xl mb-12 max-w-4xl mx-auto opacity-90">
+                ShoreSynk delivers cutting-edge DevOps and Integration consultancy, transforming your operations from architecture to secure deployment.
+            </p>
+            <a href="#contact" class="btn-primary inline-block">Start Your Transformation</a>
+        </div>
+        <!-- Subtle background pattern -->
+        <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#ffffff33 1px, transparent 1px); background-size: 20px 20px;"></div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 md:py-32 bg-white">
+        <div class="container mx-auto px-8">
+            <h2 class="section-title">Our Expertise, Your Advantage</h2>
+            <p class="subtitle">
+                We provide end-to-end solutions that streamline your operations, enhance security, and drive innovation across your enterprise.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                <!-- Service 1: DevOps Consultancy -->
+                <div class="card text-center">
+                    <svg class="icon-svg mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    <h3 class="text-2xl font-bold text-blue-800 mb-3">DevOps & Automation</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Transform your development and operations with robust DevOps strategies, CI/CD pipelines, and infrastructure automation for rapid, reliable deployments.
+                    </p>
+                </div>
+                <!-- Service 2: IBM B2B Integration -->
+                <div class="card text-center">
+                    <svg class="icon-svg mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"></path></svg>
+                    <h3 class="text-2xl font-bold text-blue-800 mb-3">Enterprise Integration</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Seamlessly connect your business partners and systems using IBM Sterling B2Bi, SFG, Connect:Direct, and Secure Proxy for secure data exchange.
+                    </p>
+                </div>
+                <!-- Service 3: Cloud-Native Orchestration -->
+                <div class="card text-center">
+                    <svg class="icon-svg mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1l-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    <h3 class="text-2xl font-bold text-blue-800 mb-3">Cloud-Native Adoption</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Harness the power of Kubernetes, OpenShift, and Argo for scalable, resilient microservices architectures and automated cloud deployments.
+                    </p>
+                </div>
+                <!-- Service 4: Architecture to Deployment -->
+                <div class="card text-center">
+                    <svg class="icon-svg mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 8a8 8 0 01-8-8H3m8 0a8 8 0 008-8m-8 8v8m0-16v8"></path></svg>
+                    <h3 class="text-2xl font-bold text-blue-800 mb-3">Full Lifecycle Management</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        From initial architectural blueprints to seamless deployment and ongoing optimization, we manage your project's entire technical lifecycle.
+                    </p>
+                </div>
+                <!-- Service 5: Security Integration -->
+                <div class="card text-center">
+                    <svg class="icon-svg mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.001 12.001 0 002 12c0 2.757 1.25 5.227 3.29 7.072A12.001 12.001 0 0012 22c2.757 0 5.227-1.25 7.072-3.29A12.001 12.001 0 0022 12c0-2.757-1.25-5.227-3.29-7.072z"></path></svg>
+                    <h3 class="text-2xl font-bold text-blue-800 mb-3">Integrated Security</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Embed robust security measures into every layer of your infrastructure and DevOps pipeline, ensuring compliance and protecting your critical assets.
+                    </p>
+                </div>
+                <!-- Service 6: Technical Aspects -->
+                <div class="card text-center">
+                    <svg class="icon-svg mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                    <h3 class="text-2xl font-bold text-blue-800 mb-3">Technical Excellence</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Our deep technical expertise spans infrastructure as code, monitoring, logging, and performance tuning, ensuring optimal system health and efficiency.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section id="technologies" class="py-20 md:py-32 bg-gray-100">
+        <div class="container mx-auto px-8">
+            <h2 class="section-title">Our Core Technologies</h2>
+            <p class="subtitle">
+                We leverage industry-leading platforms and tools to build robust, scalable, and secure solutions tailored to your business needs.
+            </p>
+            <div class="flex flex-wrap justify-center gap-6">
+                <span class="bg-blue-200 text-blue-900 px-6 py-3 rounded-full text-lg font-medium shadow-md">IBM B2Bi</span>
+                <span class="bg-blue-200 text-blue-900 px-6 py-3 rounded-full text-lg font-medium shadow-md">SFG</span>
+                <span class="bg-blue-200 text-blue-900 px-6 py-3 rounded-full text-lg font-medium shadow-md">Connect:Direct</span>
+                <span class="bg-blue-200 text-blue-900 px-6 py-3 rounded-full text-lg font-medium shadow-md">Sterling Secure Proxy</span>
+                <span class="bg-green-200 text-green-900 px-6 py-3 rounded-full text-lg font-medium shadow-md">Argo CD/Workflows</span>
+                <span class="bg-red-200 text-red-900 px-6 py-3 rounded-full text-lg font-medium shadow-md">OpenShift</span>
+                <span class="bg-purple-200 text-purple-900 px-6 py-3 rounded-full text-lg font-medium shadow-md">Kubernetes</span>
+                <span class="bg-yellow-200 text-yellow-900 px-6 py-3 rounded-full text-lg font-medium shadow-md">DevOps Toolchains</span>
+                <span class="bg-indigo-200 text-indigo-900 px-6 py-3 rounded-full text-lg font-medium shadow-md">Cloud Security</span>
+                <span class="bg-teal-200 text-teal-900 px-6 py-3 rounded-full text-lg font-medium shadow-md">CI/CD</span>
+                <span class="bg-orange-200 text-orange-900 px-6 py-3 rounded-full text-lg font-medium shadow-md">Microservices</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 md:py-32 bg-white">
+        <div class="container mx-auto px-8">
+            <h2 class="section-title">What Our Clients Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                <div class="testimonial-card">
+                    <p class="text-gray-700 italic mb-6 text-lg">
+                        "ShoreSynk transformed our integration landscape. Their expertise in IBM B2Bi and Connect:Direct was invaluable, leading to significant efficiency gains."
+                    </p>
+                    <p class="font-semibold text-blue-800">- Jane Doe, IT Director at Global Logistics</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="text-gray-700 italic mb-6 text-lg">
+                        "The team at ShoreSynk guided us through our OpenShift migration flawlessly. Their DevOps approach ensured a smooth transition and improved our deployment cycles."
+                    </p>
+                    <p class="font-semibold text-blue-800">- John Smith, Head of Engineering at Tech Innovations</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="text-gray-700 italic mb-6 text-lg">
+                        "Security was a major concern, and ShoreSynk delivered. Their integrated security solutions for our cloud-native applications gave us complete peace of mind."
+                    </p>
+                    <p class="font-semibold text-blue-800">- Emily White, Chief Security Officer at SecureCorp</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action / Contact Section -->
+    <section id="contact" class="gradient-bg text-white py-20 md:py-32 rounded-t-3xl shadow-2xl">
+        <div class="container mx-auto px-8 text-center">
+            <h2 class="text-5xl md:text-6xl font-bold mb-8">Ready to Transform Your Operations?</h2>
+            <p class="text-xl md:text-2xl mb-12 max-w-3xl mx-auto opacity-90">
+                Contact ShoreSynk today to discuss your specific needs and discover how our expertise can accelerate your business success.
+            </p>
+            <form class="max-w-2xl mx-auto bg-white p-10 rounded-2xl shadow-xl text-gray-800">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                        <input type="text" id="name" name="name" placeholder="Your Name" class="w-full p-4 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                    </div>
+                    <div>
+                        <input type="email" id="email" name="email" placeholder="Your Email" class="w-full p-4 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                    </div>
+                </div>
+                <div class="mb-6">
+                    <input type="text" id="subject" name="subject" placeholder="Subject" class="w-full p-4 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                </div>
+                <div class="mb-8">
+                    <textarea id="message" name="message" rows="6" placeholder="Your Message" class="w-full p-4 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+                </div>
+                <button type="submit" class="btn-primary w-full">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-10">
+        <div class="container mx-auto px-8 text-center">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-6">
+                <a href="#" class="text-3xl font-extrabold text-blue-400 mb-4 md:mb-0">ShoreSynk</a>
+                <div class="flex space-x-6">
+                    <a href="#services" class="text-gray-400 hover:text-white transition duration-300">Services</a>
+                    <a href="#technologies" class="text-gray-400 hover:text-white transition duration-300">Technologies</a>
+                    <a href="#about" class="text-gray-400 hover:text-white transition duration-300">About</a>
+                    <a href="#contact" class="text-gray-400 hover:text-white transition duration-300">Contact</a>
+                </div>
+            </div>
+            <p class="text-gray-500 text-sm">&copy; 2025 ShoreSynk. All rights reserved.</p>
+            <div class="mt-4 space-x-4 text-sm">
+                <a href="#" class="text-gray-500 hover:text-white transition duration-300">Privacy Policy</a>
+                <span class="text-gray-600">|</span>
+                <a href="#" class="text-gray-500 hover:text-white transition duration-300">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

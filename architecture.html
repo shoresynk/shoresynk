@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShoreSynk - Architecture Consultancy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; color: #334155; }
+        .gradient-bg { background: linear-gradient(to right, #1a202c, #2a4365); }
+        .btn-primary { @apply bg-blue-700 text-white px-8 py-4 rounded-full shadow-lg hover:bg-blue-800 transition duration-300 ease-in-out font-semibold text-lg; }
+        .section-title { @apply text-5xl font-extrabold text-center text-gray-800 mb-16 leading-tight; }
+        .subtitle { @apply text-xl text-gray-600 text-center mb-12 max-w-3xl mx-auto; }
+        /* Dropdown specific styles - copied from index.html for consistency */
+        .dropdown:hover .dropdown-menu { display: block; }
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1000;
+            border-radius: 0.5rem;
+            overflow: hidden;
+            top: calc(100% + 0.5rem);
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .dropdown-menu a {
+            color: #334155;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            font-weight: 500;
+        }
+        .dropdown-menu a:hover {
+            background-color: #f0f4f8;
+            color: #2563eb;
+        }
+        /* Mobile menu specific styles */
+        .mobile-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background-color: white;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 999;
+            padding: 1rem;
+        }
+        .mobile-menu a {
+            display: block;
+            padding: 0.75rem 1rem;
+            color: #334155;
+            font-weight: 500;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        .mobile-menu a:last-child {
+            border-bottom: none;
+        }
+        .mobile-menu .mobile-dropdown-toggle {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.75rem 1rem;
+            color: #334155;
+            font-weight: 500;
+            cursor: pointer;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        .mobile-menu .mobile-dropdown-content {
+            display: none;
+            padding-left: 1.5rem;
+            background-color: #f8fafc;
+        }
+        .mobile-menu .mobile-dropdown-content a {
+            padding: 0.5rem 1rem;
+            font-size: 0.9rem;
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header (Copied from index.html for consistency) -->
+    <header class="bg-white shadow-md py-5 relative">
+        <nav class="container mx-auto px-8 flex justify-between items-center">
+            <a href="../../Desktop/Company/index.html" class="text-3xl font-extrabold text-blue-900">ShoreSynk</a>
+            <div class="hidden md:flex space-x-10">
+                <!-- Services Dropdown -->
+                <div class="relative dropdown group">
+                    <a href="#" class="text-gray-700 hover:text-blue-800 transition duration-300 font-medium text-lg flex items-center">
+                        Services
+                        <svg class="w-4 h-4 ml-1 transform group-hover:rotate-180 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="../../Desktop/Company/index.html#services">Overview</a>
+                        <a href="architecture.html">Architecture</a>
+                        <a href="deployment.html">Deployment</a>
+                        <a href="security.html">Security</a>
+                        <a href="../../Desktop/Company/index.html#services">DevOps & Automation</a>
+                        <a href="../../Desktop/Company/index.html#services">Enterprise Integration</a>
+                        <a href="../../Desktop/Company/index.html#services">Cloud-Native Adoption</a>
+                    </div>
+                </div>
+                <a href="../../Desktop/Company/index.html#technologies" class="text-gray-700 hover:text-blue-800 transition duration-300 font-medium text-lg">Technologies</a>
+                <a href="../../Desktop/Company/index.html#about" class="text-gray-700 hover:text-blue-800 transition duration-300 font-medium text-lg">About Us</a>
+                <a href="../../Desktop/Company/index.html#testimonials" class="text-gray-700 hover:text-blue-800 transition duration-300 font-medium text-lg">Testimonials</a>
+                <a href="../../Desktop/Company/index.html#contact" class="text-gray-700 hover:text-blue-800 transition duration-300 font-medium text-lg">Contact</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-gray-700 focus:outline-none" id="mobile-menu-button">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu Content -->
+        <div class="mobile-menu" id="mobile-menu">
+            <div class="mobile-dropdown-toggle" id="mobile-services-toggle">
+                Services
+                <svg class="w-5 h-5 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </div>
+            <div class="mobile-dropdown-content" id="mobile-services-content">
+                <a href="../../Desktop/Company/index.html#services">Overview</a>
+                <a href="architecture.html">Architecture</a>
+                <a href="deployment.html">Deployment</a>
+                <a href="security.html">Security</a>
+                <a href="../../Desktop/Company/index.html#services">DevOps & Automation</a>
+                <a href="../../Desktop/Company/index.html#services">Enterprise Integration</a>
+                <a href="../../Desktop/Company/index.html#services">Cloud-Native Adoption</a>
+            </div>
+            <a href="../../Desktop/Company/index.html#technologies">Technologies</a>
+            <a href="../../Desktop/Company/index.html#about">About Us</a>
+            <a href="../../Desktop/Company/index.html#testimonials">Testimonials</a>
+            <a href="../../Desktop/Company/index.html#contact">Contact</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-8 py-20 md:py-32">
+        <h1 class="section-title">Architecture Consultancy</h1>
+        <p class="subtitle">
+            ShoreSynk provides expert guidance in designing robust, scalable, and secure architectures for your enterprise applications and infrastructure.
+        </p>
+        <div class="max-w-4xl mx-auto bg-white p-10 rounded-2xl shadow-xl text-gray-800 leading-relaxed">
+            <p class="mb-4">
+                Our architectural consulting services cover everything from microservices design and cloud infrastructure planning to data architecture and integration patterns. We help you choose the right technologies and design principles to meet your business goals and ensure future scalability.
+            </p>
+            <p class="mb-4">
+                We focus on creating resilient, high-performance systems that are easy to maintain and evolve. Our team works closely with yours to understand your unique challenges and deliver tailored architectural solutions.
+            </p>
+            <ul class="list-disc list-inside space-y-2 mt-6">
+                <li>Cloud-Native Architecture (Kubernetes, OpenShift)</li>
+                <li>Microservices Design & Implementation</li>
+                <li>API Gateway & Service Mesh Strategies</li>
+                <li>Data Architecture & Database Optimization</li>
+                <li>Hybrid Cloud & Multi-Cloud Solutions</li>
+                <li>Performance & Scalability Planning</li>
+            </ul>
+        </div>
+    </main>
+
+    <!-- Footer (Copied from index.html for consistency) -->
+    <footer class="bg-gray-900 text-white py-10">
+        <div class="container mx-auto px-8 text-center">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-6">
+                <a href="../../Desktop/Company/index.html" class="text-3xl font-extrabold text-blue-400 mb-4 md:mb-0">ShoreSynk</a>
+                <div class="flex space-x-6">
+                    <a href="../../Desktop/Company/index.html#services" class="text-gray-400 hover:text-white transition duration-300">Services</a>
+                    <a href="../../Desktop/Company/index.html#technologies" class="text-gray-400 hover:text-white transition duration-300">Technologies</a>
+                    <a href="../../Desktop/Company/index.html#about" class="text-gray-400 hover:text-white transition duration-300">About</a>
+                    <a href="../../Desktop/Company/index.html#contact" class="text-gray-400 hover:text-white transition duration-300">Contact</a>
+                </div>
+            </div>
+            <p class="text-gray-500 text-sm">&copy; 2025 ShoreSynk. All rights reserved.</p>
+            <div class="mt-4 space-x-4 text-sm">
+                <a href="#" class="text-gray-500 hover:text-white transition duration-300">Privacy Policy</a>
+                <span class="text-gray-600">|</span>
+                <a href="#" class="text-gray-500 hover:text-white transition duration-300">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileServicesToggle = document.getElementById('mobile-services-toggle');
+        const mobileServicesContent = document.getElementById('mobile-services-content');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('block');
+        });
+
+        mobileServicesToggle.addEventListener('click', () => {
+            mobileServicesContent.classList.toggle('hidden');
+            mobileServicesContent.classList.toggle('block');
+            // Rotate arrow icon
+            mobileServicesToggle.querySelector('svg').classList.toggle('rotate-180');
+        });
+
+        // Close mobile menu when a link is clicked
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                // Check if the link is not part of the dropdown toggle itself
+                if (link.closest('.mobile-dropdown-toggle') === null) {
+                    mobileMenu.classList.remove('block');
+                    mobileMenu.classList.add('hidden');
+                    // Only close the dropdown content if a direct page link is clicked
+                    if (!link.closest('.mobile-dropdown-content')) {
+                        mobileServicesContent.classList.remove('block');
+                        mobileServicesContent.classList.add('hidden');
+                        mobileServicesToggle.querySelector('svg').classList.remove('rotate-180');
+                    }
+                }
+            });
+        });
+
+        // Close mobile menu if clicked outside
+        document.addEventListener('click', (event) => {
+            if (!mobileMenu.contains(event.target) && !mobileMenuButton.contains(event.target) && mobileMenu.classList.contains('block')) {
+                mobileMenu.classList.remove('block');
+                mobileMenu.classList.add('hidden');
+                mobileServicesContent.classList.remove('block');
+                mobileServicesContent.classList.add('hidden');
+                mobileServicesToggle.querySelector('svg').classList.remove('rotate-180');
+            }
+        });
+    </script>
+</body>
+</html>
