@@ -1,15 +1,21 @@
 <!DOCTYPE html>
+
 <html lang="en">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>
+<head>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="ShoreSynk - Enterprise Integration &amp; DevOps Specialists" name="description"/>
+<meta content="ShoreSynk Technologies" property="og:title"/>
+<meta content="Empowering businesses with modern DevOps, Security, and Integration solutions." property="og:description"/>
+
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>
    ShoreSynk - Architecture Consultancy
   </title>
-  <script src="https://cdn.tailwindcss.com">
-  </script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
-  <style>
+<script src="https://cdn.tailwindcss.com">
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<style>
    body { font-family: 'Inter', sans-serif; background-color: #f8fafc; color: #334155; }
         .gradient-bg { background: linear-gradient(to right, #1a202c, #2a4365); }
         .btn-primary { @apply bg-blue-700 text-white px-8 py-4 rounded-full shadow-lg hover:bg-blue-800 transition duration-300 ease-in-out font-semibold text-lg; }
@@ -85,193 +91,204 @@
             border-bottom: none;
         }
   </style>
- </head>
- <body class="antialiased">
-  <!-- Header (Copied from index.html for consistency) -->
-  <header class="bg-white shadow-md py-5 relative">
-   <nav class="container mx-auto px-8 flex justify-between items-center">
-    <a class="flex items-center space-x-3" href="index.html">
-     <img alt="ShoreSynk Logo" class="h-10 w-auto rounded-lg shadow-md" src="shoresynk-logo.png"/>
-     <span class="text-3xl font-extrabold text-blue-900">
+</head>
+<body class="antialiased">
+<!-- Header (Copied from index.html for consistency) -->
+<header class="bg-white shadow-md py-5 relative">
+<nav class="container mx-auto px-8 flex justify-between items-center">
+<a class="flex items-center space-x-3" href="index.html">
+<img alt="ShoreSynk Logo" class="h-10 w-auto rounded-lg shadow-md" src="shoresynk-logo.png"/>
+<span class="text-3xl font-extrabold text-blue-900">
       ShoreSynk
      </span>
-    </a>
-    <div class="hidden md:flex space-x-10">
-     <!-- Services Dropdown -->
-     <div class="relative dropdown group">
-      <a class="text-gray-700 hover:text-blue-800 transition duration-300 font-medium text-lg flex items-center" href="#">
+</a>
+<div class="hidden md:flex space-x-10">
+<!-- Services Dropdown -->
+<div class="relative dropdown group">
+<a class="text-gray-700 hover:text-blue-800 transition duration-300 font-medium text-lg flex items-center" href="#">
        Services
        <svg class="w-4 h-4 ml-1 transform group-hover:rotate-180 transition-transform duration-300" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-        </path>
-       </svg>
-      </a>
-      <div class="dropdown-menu">
-       <a href="../../Desktop/Company/index.html#services">
+<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+</path>
+</svg>
+</a>
+<div class="dropdown-menu">
+<a href="../../Desktop/Company/index.html#services">
         Overview
        </a>
-       <a href="architecture.html">
+<a href="architecture.html">
         Architecture
        </a>
-       <a href="deployment.html">
+<a href="deployment.html">
         Deployment
        </a>
-       <a href="security.html">
+<a href="security.html">
         Security
        </a>
-       <a href="../../Desktop/Company/index.html#services">
+<a href="../../Desktop/Company/index.html#services">
         DevOps &amp; Automation
        </a>
-       <a href="../../Desktop/Company/index.html#services">
+<a href="../../Desktop/Company/index.html#services">
         Enterprise Integration
        </a>
-       <a href="../../Desktop/Company/index.html#services">
+<a href="../../Desktop/Company/index.html#services">
         Cloud-Native Adoption
        </a>
-      </div>
-     </div>
-     <a class="text-gray-700 hover:text-blue-800 transition duration-300 font-medium text-lg" href="../../Desktop/Company/index.html#technologies">
+</div>
+</div>
+<a class="text-gray-700 hover:text-blue-800 transition duration-300 font-medium text-lg" href="../../Desktop/Company/index.html#technologies">
       Technologies
      </a>
-     <a class="text-gray-700 hover:text-blue-800 transition duration-300 font-medium text-lg" href="../../Desktop/Company/index.html#about">
+<a class="text-gray-700 hover:text-blue-800 transition duration-300 font-medium text-lg" href="../../Desktop/Company/index.html#about">
       About Us
      </a>
-     <a class="text-gray-700 hover:text-blue-800 transition duration-300 font-medium text-lg" href="../../Desktop/Company/index.html#testimonials">
+<a class="text-gray-700 hover:text-blue-800 transition duration-300 font-medium text-lg" href="../../Desktop/Company/index.html#testimonials">
       Testimonials
      </a>
-     <a class="text-gray-700 hover:text-blue-800 transition duration-300 font-medium text-lg" href="../../Desktop/Company/index.html#contact">
+<a class="text-gray-700 hover:text-blue-800 transition duration-300 font-medium text-lg" href="../../Desktop/Company/index.html#contact">
       Contact
      </a>
-    </div>
-    <!-- Mobile Menu Button -->
-    <button class="md:hidden text-gray-700 focus:outline-none" id="mobile-menu-button">
-     <svg class="w-8 h-8" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-      <path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-      </path>
-     </svg>
-    </button>
-   </nav>
-   <!-- Mobile Menu Content -->
-   <div class="mobile-menu" id="mobile-menu">
-    <div class="mobile-dropdown-toggle" id="mobile-services-toggle">
+</div>
+<!-- Mobile Menu Button -->
+<button class="md:hidden text-gray-700 focus:outline-none" id="mobile-menu-button">
+<svg class="w-8 h-8" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+</path>
+</svg>
+</button>
+</nav>
+<!-- Mobile Menu Content -->
+<div class="mobile-menu" id="mobile-menu">
+<div class="mobile-dropdown-toggle" id="mobile-services-toggle">
      Services
      <svg class="w-5 h-5 transform transition-transform duration-300" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-      <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-      </path>
-     </svg>
-    </div>
-    <div class="mobile-dropdown-content" id="mobile-services-content">
-     <a href="../../Desktop/Company/index.html#services">
+<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+</path>
+</svg>
+</div>
+<div class="mobile-dropdown-content" id="mobile-services-content">
+<a href="../../Desktop/Company/index.html#services">
       Overview
      </a>
-     <a href="architecture.html">
+<a href="architecture.html">
       Architecture
      </a>
-     <a href="deployment.html">
+<a href="deployment.html">
       Deployment
      </a>
-     <a href="security.html">
+<a href="security.html">
       Security
      </a>
-     <a href="../../Desktop/Company/index.html#services">
+<a href="../../Desktop/Company/index.html#services">
       DevOps &amp; Automation
      </a>
-     <a href="../../Desktop/Company/index.html#services">
+<a href="../../Desktop/Company/index.html#services">
       Enterprise Integration
      </a>
-     <a href="../../Desktop/Company/index.html#services">
+<a href="../../Desktop/Company/index.html#services">
       Cloud-Native Adoption
      </a>
-    </div>
-    <a href="../../Desktop/Company/index.html#technologies">
+</div>
+<a href="../../Desktop/Company/index.html#technologies">
      Technologies
     </a>
-    <a href="../../Desktop/Company/index.html#about">
+<a href="../../Desktop/Company/index.html#about">
      About Us
     </a>
-    <a href="../../Desktop/Company/index.html#testimonials">
+<a href="../../Desktop/Company/index.html#testimonials">
      Testimonials
     </a>
-    <a href="../../Desktop/Company/index.html#contact">
+<a href="../../Desktop/Company/index.html#contact">
      Contact
     </a>
-   </div>
-  </header>
-  <main class="container mx-auto px-8 py-20 md:py-32">
-   <h1 class="section-title">
+</div>
+</header>
+<main class="container mx-auto px-8 py-20 md:py-32">
+<h1 class="section-title">
     Architecture Consultancy
    </h1>
-   <p class="subtitle">
+<p class="subtitle">
     ShoreSynk provides expert guidance in designing robust, scalable, and secure architectures for your enterprise applications and infrastructure.
    </p>
-   <div class="max-w-4xl mx-auto bg-white p-10 rounded-2xl shadow-xl text-gray-800 leading-relaxed">
-    <p class="mb-4">
+<div class="max-w-4xl mx-auto bg-white p-10 rounded-2xl shadow-xl text-gray-800 leading-relaxed">
+<p class="mb-4">
      Our architectural consulting services cover everything from microservices design and cloud infrastructure planning to data architecture and integration patterns. We help you choose the right technologies and design principles to meet your business goals and ensure future scalability.
     </p>
-    <p class="mb-4">
+<p class="mb-4">
      We focus on creating resilient, high-performance systems that are easy to maintain and evolve. Our team works closely with yours to understand your unique challenges and deliver tailored architectural solutions.
     </p>
-    <ul class="list-disc list-inside space-y-2 mt-6">
-     <li>
+<ul class="list-disc list-inside space-y-2 mt-6">
+<li>
       Cloud-Native Architecture (Kubernetes, OpenShift)
      </li>
-     <li>
+<li>
       Microservices Design &amp; Implementation
      </li>
-     <li>
+<li>
       API Gateway &amp; Service Mesh Strategies
      </li>
-     <li>
+<li>
       Data Architecture &amp; Database Optimization
      </li>
-     <li>
+<li>
       Hybrid Cloud &amp; Multi-Cloud Solutions
      </li>
-     <li>
+<li>
       Performance &amp; Scalability Planning
      </li>
-    </ul>
-   </div>
-  </main>
-  <!-- Footer (Copied from index.html for consistency) -->
-  <footer class="bg-gray-900 text-white py-10">
-   <div class="container mx-auto px-8 text-center">
-    <div class="flex flex-col md:flex-row justify-between items-center mb-6">
-     <a class="text-3xl font-extrabold text-blue-400 mb-4 md:mb-0" href="../../Desktop/Company/index.html">
+</ul>
+</div>
+
+<section class="bg-blue-600 text-white text-center py-12 mt-16">
+<h2 class="text-2xl font-bold mb-4">Ready to transform your enterprise systems?</h2>
+<p class="mb-6">Talk to our experts and discover what ShoreSynk can do for your business.</p>
+<a class="bg-white text-blue-600 px-6 py-2 rounded font-semibold hover:bg-gray-100" href="mailto:info@shoresynk.com">Contact Us</a>
+</section>
+
+<footer class="bg-gray-800 text-white text-center py-6 mt-16">
+<p class="text-sm">© 2025 ShoreSynk Technologies. All rights reserved.</p>
+<p class="text-xs">Empowering enterprise innovation through DevOps and cloud-native expertise.</p>
+</footer>
+</main>
+<!-- Footer (Copied from index.html for consistency) -->
+<footer class="bg-gray-900 text-white py-10">
+<div class="container mx-auto px-8 text-center">
+<div class="flex flex-col md:flex-row justify-between items-center mb-6">
+<a class="text-3xl font-extrabold text-blue-400 mb-4 md:mb-0" href="../../Desktop/Company/index.html">
       ShoreSynk
      </a>
-     <div class="flex space-x-6">
-      <a class="text-gray-400 hover:text-white transition duration-300" href="../../Desktop/Company/index.html#services">
+<div class="flex space-x-6">
+<a class="text-gray-400 hover:text-white transition duration-300" href="../../Desktop/Company/index.html#services">
        Services
       </a>
-      <a class="text-gray-400 hover:text-white transition duration-300" href="../../Desktop/Company/index.html#technologies">
+<a class="text-gray-400 hover:text-white transition duration-300" href="../../Desktop/Company/index.html#technologies">
        Technologies
       </a>
-      <a class="text-gray-400 hover:text-white transition duration-300" href="../../Desktop/Company/index.html#about">
+<a class="text-gray-400 hover:text-white transition duration-300" href="../../Desktop/Company/index.html#about">
        About
       </a>
-      <a class="text-gray-400 hover:text-white transition duration-300" href="../../Desktop/Company/index.html#contact">
+<a class="text-gray-400 hover:text-white transition duration-300" href="../../Desktop/Company/index.html#contact">
        Contact
       </a>
-     </div>
-    </div>
-    <p class="text-gray-500 text-sm">
+</div>
+</div>
+<p class="text-gray-500 text-sm">
      © 2025 ShoreSynk. All rights reserved.
     </p>
-    <div class="mt-4 space-x-4 text-sm">
-     <a class="text-gray-500 hover:text-white transition duration-300" href="#">
+<div class="mt-4 space-x-4 text-sm">
+<a class="text-gray-500 hover:text-white transition duration-300" href="#">
       Privacy Policy
      </a>
-     <span class="text-gray-600">
+<span class="text-gray-600">
       |
      </span>
-     <a class="text-gray-500 hover:text-white transition duration-300" href="#">
+<a class="text-gray-500 hover:text-white transition duration-300" href="#">
       Terms of Service
      </a>
-    </div>
-   </div>
-  </footer>
-  <script>
+</div>
+</div>
+</footer>
+<script>
    // JavaScript for mobile menu toggle
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
@@ -318,5 +335,5 @@
             }
         });
   </script>
- </body>
+</body>
 </html>
