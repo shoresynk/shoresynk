@@ -1,7 +1,7 @@
 ## Hi there 👋
 
 <!--  
-**shoresynk/shoresynk** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+**shoresynk/shoresyn** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
 Here are some idea to get you started:
 
