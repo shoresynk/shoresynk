@@ -1,34 +1,455 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Shoresynk</title>
-    <link rel="stylesheet" href="styles.css" />
-</head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>
+   ShoreSynk - DevOps &amp; Integration Consultancy
+  </title>
+<meta content="ShoreSynk - Enterprise Integration &amp; DevOps Specialists" name="description"/>
+<meta content="ShoreSynk Technologies" property="og:title"/>
+<meta content="Empowering businesses with modern DevOps, Security, and Integration solutions." property="og:description"/>
+<script src="https://cdn.tailwindcss.com">
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<style>
+   body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Light gray background */
+            color: #334155; /* Darker text color */
+        }
+        .gradient-bg {
+            background: linear-gradient(to right, #1a202c, #2a4365); /* Darker, sophisticated blue gradient */
+        }
+        .btn-primary {
+            @apply bg-blue-700 text-white px-8 py-4 rounded-full shadow-lg hover:bg-blue-800 transition duration-300 ease-in-out;
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #007bff, #00c6ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+  </style>
+<style>
+/* Dropdown hover style */
+nav ul li {
+  position: relative;
+}
+nav ul li ul {
+  display: none;
+  position: absolute;
+  background: #fff;
+  padding: 0;
+  list-style: none;
+  min-width: 160px;
+  z-index: 1000;
+}
+nav ul li:hover ul {
+  display: block;
+}
+nav ul li ul li a {
+  padding: 10px;
+  display: block;
+  color: #333;
+  text-decoration: none;
+}
+nav ul li ul li a:hover {
+  background-color: #f0f0f0;
+}
+</style></head>
 <body>
-
-<!-- Logo -->
-<header style="padding: 10px;">
-    <img src="shoresynk-logo.png" alt="Shoresynk Logo" style="height: 50px;">
-</header>
-
-<!-- Hero Section -->
-<section style="text-align: center; padding: 50px; background: #f2f2f2;">
-    <h1>Welcome to Shoresynk</h1>
-    <p>Seamless cloud syncing for modern infrastructures.</p>
-    <img src="https://source.unsplash.com/featured/?cloud,technology" alt="Hero Image" style="max-width: 100%; height: auto;">
+<section style="padding:80px 20px; background:#001a4d; color:white; text-align:center;">
+<h2 style="font-size:2.4em;">
+    Empowering Integration with IBM &amp; DevOps Technologies
+   </h2>
+<p style="max-width:700px; margin:20px auto; font-size:1.2em;">
+    ShoreSynk delivers enterprise-grade solutions leveraging the IBM Sterling suite and DevOps tools like Kubernetes, Argo CD, and OpenShift.
+   </p>
 </section>
-
-<!-- Main Content -->
-<main style="padding: 20px;">
-    <h2>Empowering Cloud Synchronization</h2>
-    <p>
-        Shoresynk provides robust and reliable data syncing solutions tailored to your business needs.
-        Secure, fast, and developer-friendly.
+<header style="background:#fff; border-bottom:1px solid #ddd; padding:10px 0; position:sticky; top:0; z-index:1000;">
+<div style="max-width:1200px; margin:0 auto; padding:0 20px; display:flex; align-items:center; justify-content:space-between;">
+<h1 style="font-size:1.6em; color:#001a4d;">
+     ShoreSynk
+    </h1>
+<nav>
+<ul style="list-style:none; margin:0; padding:0; display:flex; gap:25px; font-size:1em;">
+<li>
+<a href="index.html" style="text-decoration:none; color:#333;">
+        Home
+       </a>
+</li>
+<li>
+<a href="services.html" style="text-decoration:none; color:#333;">
+        Services
+       </a>
+</li>
+<li style="position:relative;">
+<a href="#technologies" style="text-decoration:none; color:#333;">Technologies</a>
+<ul style="position:absolute; background:white; list-style:none; padding:10px; box-shadow:0 2px 6px rgba(0,0,0,0.15); display:none;">
+<li>
+<a href="#devops" style="display:block; padding:5px 10px; text-decoration:none; color:#333;">
+          DevOps
+         </a>
+</li>
+<li>
+<a href="#integration" style="display:block; padding:5px 10px; text-decoration:none; color:#333;">
+          Integration
+         </a>
+</li>
+</ul>
+</li>
+<li>
+<a href="testimonials.html" style="text-decoration:none; color:#333;">
+        Testimonials
+       </a>
+</li>
+<li>
+<a href="contact.html" style="text-decoration:none; color:#333;">
+        Contact
+       </a>
+</li>
+<li><a href="#about">About Us</a></li><li>
+<a href="about.html" style="text-decoration:none; color:#333;">
+        About Us
+       </a>
+</li>
+</ul>
+</nav>
+</div>
+</header>
+<script>
+   document.addEventListener("DOMContentLoaded", function() {
+    const dropdown = document.querySelector("nav ul li[position='relative']");
+    const submenu = dropdown?.querySelector("ul");
+    if (dropdown && submenu) {
+      dropdown.addEventListener("mouseover", () => submenu.style.display = "block");
+      dropdown.addEventListener("mouseout", () => submenu.style.display = "none");
+    }
+  });
+  </script>
+<section class="gradient-bg text-white py-20 px-6">
+<div class="container mx-auto text-center">
+<h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-6">
+     Empowering Your Enterprise with
+     <br/>
+<span class="text-gradient">
+      Modern DevOps &amp; Cloud-Native Solutions
+     </span>
+</h1>
+<p class="text-xl md:text-2xl mb-8 opacity-90 max-w-3xl mx-auto">
+     ShoreSynk specializes in transforming complex IT landscapes into agile, secure, and scalable environments.
     </p>
-</main>
-
-<script src="scripts.js"></script>
+<a class="btn-primary" href="#contact">
+     Get a Free Consultation
+    </a>
+</div>
+</section>
+<section class="py-20 px-6 bg-gray-50" id="services">
+<div class="container mx-auto">
+<h2 class="text-4xl font-bold text-center mb-12 text-gray-800">
+     Our Core Services
+    </h2>
+<div class="grid md:grid-cols-3 gap-10">
+<div class="bg-white p-8 rounded-lg shadow-lg text-center">
+<img alt="DevOps Icon" class="mx-auto mb-6" src="https://via.placeholder.com/60"/>
+<h3 class="text-2xl font-semibold mb-4 text-gray-800">
+       DevOps &amp; Automation
+      </h3>
+<p class="text-gray-600">
+       Streamline your development cycles, enhance collaboration, and automate infrastructure with CI/CD pipelines, IaC, and containerization.
+      </p>
+</div>
+<div class="bg-white p-8 rounded-lg shadow-lg text-center">
+<img alt="Security Icon" class="mx-auto mb-6" src="https://via.placeholder.com/60"/>
+<h3 class="text-2xl font-semibold mb-4 text-gray-800">
+       Cloud Security &amp; Compliance
+      </h3>
+<p class="text-gray-600">
+       Implement robust security measures, ensure regulatory compliance, and protect your cloud assets with our expert strategies.
+      </p>
+</div>
+<div class="bg-white p-8 rounded-lg shadow-lg text-center">
+<img alt="Integration Icon" class="mx-auto mb-6" src="https://via.placeholder.com/60"/>
+<h3 class="text-2xl font-semibold mb-4 text-gray-800">
+       Enterprise Integration
+      </h3>
+<p class="text-gray-600">
+       Connect disparate systems, data, and applications seamlessly to foster innovation and drive business efficiency.
+      </p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 px-6" id="technologies">
+<div class="container mx-auto text-center">
+<h2 class="text-4xl font-bold mb-12 text-gray-800">
+     Technologies We Master
+    </h2>
+<div class="flex flex-wrap justify-center items-center gap-8 md:gap-12">
+<img alt="AWS" class="h-10 opacity-75 hover:opacity-100 transition-opacity" src="https://via.placeholder.com/80x40?text=AWS"/>
+<img alt="Azure" class="h-10 opacity-75 hover:opacity-100 transition-opacity" src="https://via.placeholder.com/80x40?text=Azure"/>
+<img alt="GCP" class="h-10 opacity-75 hover:opacity-100 transition-opacity" src="https://via.placeholder.com/80x40?text=GCP"/>
+<img alt="Kubernetes" class="h-10 opacity-75 hover:opacity-100 transition-opacity" src="https://via.placeholder.com/80x40?text=Kubernetes"/>
+<img alt="Docker" class="h-10 opacity-75 hover:opacity-100 transition-opacity" src="https://via.placeholder.com/80x40?text=Docker"/>
+<img alt="Ansible" class="h-10 opacity-75 hover:opacity-100 transition-opacity" src="https://via.placeholder.com/80x40?text=Ansible"/>
+<img alt="Terraform" class="h-10 opacity-75 hover:opacity-100 transition-opacity" src="https://via.placeholder.com/80x40?text=Terraform"/>
+<img alt="Jenkins" class="h-10 opacity-75 hover:opacity-100 transition-opacity" src="https://via.placeholder.com/80x40?text=Jenkins"/>
+</div>
+</div>
+</section>
+<section class="py-20 px-6 bg-gray-50" id="testimonials">
+<div class="container mx-auto">
+<h2 class="text-4xl font-bold text-center mb-12 text-gray-800">
+     What Our Clients Say
+    </h2>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="bg-white p-6 shadow-md rounded-md">
+<p class="italic">
+       "ShoreSynk's expertise in cloud architecture and CI/CD transformed our delivery pipeline. We've seen a significant reduction in deployment times and increased stability."
+      </p>
+<p class="mt-4 font-semibold text-right">
+       — Laura Patel, Integration Lead, TransGlobal Freight
+      </p>
+</div>
+<div class="bg-white p-6 shadow-md rounded-md">
+<p class="italic">
+       "Migrating to OpenShift felt overwhelming — until ShoreSynk took the reins. They handled our CI/CD redesign, Terraform automation, and compliance checks with zero downtime. We’ve scaled faster than expected."
+      </p>
+<p class="mt-4 font-semibold text-right">
+       — Daniel Ng, DevOps Manager, FinSure Analytics
+      </p>
+</div>
+<div class="bg-white p-6 shadow-md rounded-md">
+<p class="italic">
+       "ShoreSynk helped us move from reactive patching to proactive security. Their team implemented IAM best practices and container image scanning across our Kubernetes clusters. Our last audit passed with no findings."
+      </p>
+<p class="mt-4 font-semibold text-right">
+       — Samantha Reyes, Information Security Lead, Nova Energy
+      </p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 px-6 gradient-bg text-white" id="contact">
+<div class="container mx-auto text-center">
+<h2 class="text-4xl font-bold mb-8">
+     Ready to Transform Your Business?
+    </h2>
+<p class="text-xl mb-12 max-w-2xl mx-auto opacity-90">
+     Get in touch with our experts to discuss your unique challenges and how ShoreSynk can help you achieve your goals.
+    </p>
+<form class="max-w-xl mx-auto bg-white p-8 rounded-lg shadow-lg text-gray-800">
+<div class="mb-6">
+<input class="w-full p-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Your Name" required="" type="text"/>
+</div>
+<div class="mb-6">
+<input class="w-full p-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Your Email" required="" type="email"/>
+</div>
+<div class="mb-6">
+<input class="w-full p-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-500" placeholder="Company Name (Optional)" type="text"/>
+</div>
+<div class="mb-6">
+<textarea class="w-full p-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Your Message" required="" rows="5"></textarea>
+</div>
+<button class="btn-primary w-full" type="submit">
+      Send Message
+     </button>
+</form>
+</div>
+</section>
+<footer class="bg-gray-800 text-white text-center py-8 mt-20">
+<div class="text-sm">
+<p>
+     © 2025 ShoreSynk Technologies |
+     <a class="underline" href="#">
+      Privacy Policy
+     </a>
+     |
+     <a class="underline" href="#">
+      Terms of Use
+     </a>
+</p>
+<p class="mt-2">
+     Empowering enterprise innovation through DevOps and cloud-native expertise.
+    </p>
+</div>
+</footer>
+<section style="padding:50px 20px;">
+<h2 style="text-align:center; font-size:2em; margin-bottom:30px;">
+    Our IBM Integration Stack
+   </h2>
+<div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:25px;">
+<div style="border:1px solid #ccc; padding:20px; border-radius:8px;">
+<h3>
+      IBM Sterling B2B Integrator
+     </h3>
+<p>
+      Process automation and partner integration in a secure, scalable platform.
+     </p>
+</div>
+<div style="border:1px solid #ccc; padding:20px; border-radius:8px;">
+<h3>
+      IBM Sterling File Gateway
+     </h3>
+<p>
+      Managed secure file exchange with extensive visibility and control.
+     </p>
+</div>
+<div style="border:1px solid #ccc; padding:20px; border-radius:8px;">
+<h3>
+      IBM Connect:Direct
+     </h3>
+<p>
+      Reliable high-performance file transfers for critical business data.
+     </p>
+</div>
+<div style="border:1px solid #ccc; padding:20px; border-radius:8px;">
+<h3>
+      IBM Secure Proxy
+     </h3>
+<p>
+      Secure edge proxy for DMZ deployment, controlling data traffic flows.
+     </p>
+</div>
+<div style="border:1px solid #ccc; padding:20px; border-radius:8px;">
+<h3>
+      IBM Control Center
+     </h3>
+<p>
+      Central monitoring and alerting for integration processes and file flows.
+     </p>
+</div>
+<div style="border:1px solid #ccc; padding:20px; border-radius:8px;">
+<h3>
+      IBM Cloud Pak for Integration
+     </h3>
+<p>
+      Containerized, hybrid cloud integration platform with scalable services.
+     </p>
+</div>
+</div>
+</section>
+<section style="background:#f9f9f9; padding:50px 20px;">
+<h2 style="text-align:center; font-size:2em; margin-bottom:20px;">
+    What Our Clients Say
+   </h2>
+<blockquote style="max-width:700px; margin:0 auto; font-style:italic; font-size:1.1em;">
+    “ShoreSynk’s integration with IBM Sterling helped us reduce onboarding time by 60%. Exceptional service and support.”
+    <br/>
+<br/>
+    — Logistics Director, Global Freight Co.
+   </blockquote>
+</section>
+<section style="padding:60px 20px; background:#f0f4f9;">
+<h2 style="text-align:center; font-size:2em; margin-bottom:30px;">
+    DevOps &amp; Cloud-Native Technologies
+   </h2>
+<div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap:25px;">
+<div style="background:white; padding:20px; border-radius:8px; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
+<h3>
+      Kubernetes
+     </h3>
+<p>
+      Container orchestration for automated deployment and scaling.
+     </p>
+</div>
+<div style="background:white; padding:20px; border-radius:8px; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
+<h3>
+      OpenShift
+     </h3>
+<p>
+      Red Hat’s enterprise Kubernetes platform for secure cloud-native apps.
+     </p>
+</div>
+<div style="background:white; padding:20px; border-radius:8px; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
+<h3>
+      Argo CD
+     </h3>
+<p>
+      GitOps continuous delivery tool for Kubernetes applications.
+     </p>
+</div>
+<div style="background:white; padding:20px; border-radius:8px; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
+<h3>
+      Terraform
+     </h3>
+<p>
+      Infrastructure as code for provisioning across cloud providers.
+     </p>
+</div>
+<div style="background:white; padding:20px; border-radius:8px; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
+<h3>
+      GitHub Actions
+     </h3>
+<p>
+      Automated CI/CD pipelines integrated with source control.
+     </p>
+</div>
+<div style="background:white; padding:20px; border-radius:8px; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
+<h3>
+      Docker
+     </h3>
+<p>
+      Lightweight container technology for building and sharing applications.
+     </p>
+</div>
+</div>
+</section>
+<section style="padding:60px 20px; background:#ffffff;">
+<h2 style="text-align:center; font-size:2em; margin-bottom:30px;">
+    IBM Sterling Integration Suite
+   </h2>
+<div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap:25px;">
+<div style="background:#f7f7f7; padding:20px; border-radius:8px;">
+<h3>
+      IBM Sterling B2B Integrator
+     </h3>
+<p>
+      Centralized partner onboarding and integration platform for secure transactions.
+     </p>
+</div>
+<div style="background:#f7f7f7; padding:20px; border-radius:8px;">
+<h3>
+      IBM Sterling File Gateway
+     </h3>
+<p>
+      High-volume secure file transfers with visibility and governance.
+     </p>
+</div>
+<div style="background:#f7f7f7; padding:20px; border-radius:8px;">
+<h3>
+      IBM Connect:Direct
+     </h3>
+<p>
+      Point-to-point secure data movement for mission-critical files.
+     </p>
+</div>
+<div style="background:#f7f7f7; padding:20px; border-radius:8px;">
+<h3>
+      IBM Secure Proxy
+     </h3>
+<p>
+      Edge security layer for data flow governance and protection.
+     </p>
+</div>
+<div style="background:#f7f7f7; padding:20px; border-radius:8px;">
+<h3>
+      IBM Control Center
+     </h3>
+<p>
+      Comprehensive monitoring and alerting for file and process flows.
+     </p>
+</div>
+<div style="background:#f7f7f7; padding:20px; border-radius:8px;">
+<h3>
+      IBM Transformation Extender
+     </h3>
+<p>
+      Powerful data transformation for EDI, XML, SWIFT, and other formats.
+     </p>
+</div>
+</div>
+</section>
 </body>
 </html>
