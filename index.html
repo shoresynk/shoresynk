@@ -32,50 +32,77 @@
   </style>
  </head>
  <body>
-  <section style="background-color:#0a1a2f; color:white; padding:60px 20px; text-align:center;">
-   <h1 style="font-size:2.8em; margin-bottom:20px;">
-    Empowering Integration with IBM Technology
-   </h1>
-   <p style="font-size:1.2em;">
-    ShoreSynk delivers seamless B2B and DevOps solutions using industry-leading IBM platforms.
+  <section style="padding:80px 20px; background:#001a4d; color:white; text-align:center;">
+   <h2 style="font-size:2.4em;">
+    Empowering Integration with IBM &amp; DevOps Technologies
+   </h2>
+   <p style="max-width:700px; margin:20px auto; font-size:1.2em;">
+    ShoreSynk delivers enterprise-grade solutions leveraging the IBM Sterling suite and DevOps tools like Kubernetes, Argo CD, and OpenShift.
    </p>
   </section>
-  <header class="bg-white shadow-sm">
-   <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-    <div class="text-2xl font-bold text-gray-900">
+  <header style="background:#fff; border-bottom:1px solid #ddd; padding:10px 0; position:sticky; top:0; z-index:1000;">
+   <div style="max-width:1200px; margin:0 auto; padding:0 20px; display:flex; align-items:center; justify-content:space-between;">
+    <h1 style="font-size:1.6em; color:#001a4d;">
      ShoreSynk
-    </div>
+    </h1>
     <nav>
-     <ul class="flex space-x-6">
+     <ul style="list-style:none; margin:0; padding:0; display:flex; gap:25px; font-size:1em;">
       <li>
-       <a class="text-gray-600 hover:text-blue-700 font-medium" href="#">
+       <a href="index.html" style="text-decoration:none; color:#333;">
         Home
        </a>
       </li>
       <li>
-       <a class="text-gray-600 hover:text-blue-700 font-medium" href="#services">
+       <a href="services.html" style="text-decoration:none; color:#333;">
         Services
        </a>
       </li>
-      <li>
-       <a class="text-gray-600 hover:text-blue-700 font-medium" href="#technologies">
-        Technologies
+      <li style="position:relative;">
+       <a href="#" style="text-decoration:none; color:#333;">
+        Technologies ▼
        </a>
+       <ul style="position:absolute; background:white; list-style:none; padding:10px; box-shadow:0 2px 6px rgba(0,0,0,0.15); display:none;">
+        <li>
+         <a href="#devops" style="display:block; padding:5px 10px; text-decoration:none; color:#333;">
+          DevOps
+         </a>
+        </li>
+        <li>
+         <a href="#integration" style="display:block; padding:5px 10px; text-decoration:none; color:#333;">
+          Integration
+         </a>
+        </li>
+       </ul>
       </li>
       <li>
-       <a class="text-gray-600 hover:text-blue-700 font-medium" href="#testimonials">
+       <a href="testimonials.html" style="text-decoration:none; color:#333;">
         Testimonials
        </a>
       </li>
       <li>
-       <a class="text-gray-600 hover:text-blue-700 font-medium" href="#contact">
+       <a href="contact.html" style="text-decoration:none; color:#333;">
         Contact
+       </a>
+      </li>
+      <li>
+       <a href="about.html" style="text-decoration:none; color:#333;">
+        About Us
        </a>
       </li>
      </ul>
     </nav>
    </div>
   </header>
+  <script>
+   document.addEventListener("DOMContentLoaded", function() {
+    const dropdown = document.querySelector("nav ul li[position='relative']");
+    const submenu = dropdown?.querySelector("ul");
+    if (dropdown && submenu) {
+      dropdown.addEventListener("mouseover", () => submenu.style.display = "block");
+      dropdown.addEventListener("mouseout", () => submenu.style.display = "none");
+    }
+  });
+  </script>
   <section class="gradient-bg text-white py-20 px-6">
    <div class="container mx-auto text-center">
     <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-6">
