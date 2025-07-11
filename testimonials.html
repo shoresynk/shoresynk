@@ -14,13 +14,33 @@
           transform: translateY(-5px);
           box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
         }
+        /* Style for the hero section background */
+        .hero-background {
+            background-image: url('https://tse4.mm.bing.net/th/id/OIP.Zzp7vDEHLs-ldM_Fr9gBeAHaE-?pid=Api');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        .hero-background::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
+        }
+        .hero-content {
+            position: relative;
+            z-index: 10;
+        }
     </style>
 </head>
 <body class="bg-gray-900 text-white font-sans">
 <header class="bg-gray-800 shadow-md sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
         <div class="flex items-center gap-3">
-            <img src="data:image/png;base64,iVBOR..." alt="ShoreSynk Logo" class="h-10 w-auto rounded-md">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABHNCSVQICAgIfAhkiAAAAaNJRefUWIXtlz9LAlEQx3+vFwpChcoKoUFUrkFOoNBRKb2CjaXEBoVdoVCrgFoUF0dHICL3EkDgZ3uzNy7Igc0YcdkZkZzMn5c++z9+Z9fMwUQY5yT8Du8BDXAGFoU4nQkUq+cAs1HnM6kFd+EPMAo29yxAk0QT4SGgLzqAe6gwJhzF1CIx2HjsdC5FXEszgB8BhZ5iOt0J+WzZkBrN1p1LRt2B3svm4lbjTeQgNvdESFdzHJ1LbgQuE7apZpBPvpr+FfAqMn3jAA/hBRzEWBdjCM7ScyiO09A4iVKcfwNBeRfdOdq1YJ7BDshcOC4m3OSIPniXRNa4hc2WSQ+RbZ6J7y9MiStPuAvEZccyHKR7bpjkwL5s0wVeqtvKN7AzT0vvgQuyKcN73PywPtBQ6m4k5W4kp64+ZwqBnvgRKOkg39yfpczj84ZP9UqnKoq+pXKhAAAAAElFTkSuQmCC" alt="ShoreSynk Logo" class="h-10 w-auto rounded-md">
             <h1 class="text-2xl font-bold text-blue-400">ShoreSynk</h1>
         </div>
         <nav class="hidden md:flex space-x-6 text-sm">
@@ -34,9 +54,14 @@
     </div>
 </header>
 
-<section class="py-20 bg-gray-900 text-center px-6">
-    <h2 class="text-4xl font-bold text-blue-400 mb-4">Client Testimonials</h2>
-    <p class="text-lg max-w-3xl mx-auto mb-10">Here's what our clients say about working with ShoreSynk across integration, DevOps, and modernization projects.</p>
+<section class="py-20 text-center px-6 hero-background">
+    <div class="hero-content">
+        <h2 class="text-4xl sm:text-5xl font-extrabold text-blue-400 mb-4" data-aos="fade-up">What Our Clients Say</h2>
+        <p class="text-lg sm:text-xl max-w-3xl mx-auto mb-10 text-white" data-aos="fade-up" data-aos-delay="100">Hear directly from businesses that have transformed their operations with ShoreSynk's expertise in DevOps, integration, and modernization.</p>
+    </div>
+</section>
+
+<section class="py-16 bg-gray-900 text-center px-6">
     <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
 
         <div class="bg-gray-800 p-6 rounded-lg testimonial-card" data-aos="fade-up">
