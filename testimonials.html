@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testimonials | ShoreSynk</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        .testimonial-card {
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .testimonial-card:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+<header class="bg-gray-800 shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+        <div class="flex items-center gap-3">
+            <img src="data:image/png;base64,iVBOR..." alt="ShoreSynk Logo" class="h-10 w-auto rounded-md">
+            <h1 class="text-2xl font-bold text-blue-400">ShoreSynk</h1>
+        </div>
+        <nav class="hidden md:flex space-x-6 text-sm">
+            <a href="index.html" class="hover:text-blue-400">Home</a>
+            <a href="about.html" class="hover:text-blue-400">About Us</a>
+            <a href="integration.html" class="hover:text-blue-400">Integration</a>
+            <a href="devops.html" class="hover:text-blue-400">DevOps</a>
+            <a href="testimonials.html" class="text-white font-semibold">Testimonials</a>
+            <a href="index.html#contact" class="hover:text-blue-400">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<section class="py-20 bg-gray-900 text-center px-6">
+    <h2 class="text-4xl font-bold text-blue-400 mb-4">Client Testimonials</h2>
+    <p class="text-lg max-w-3xl mx-auto mb-10">Here's what our clients say about working with ShoreSynk across integration, DevOps, and modernization projects.</p>
+    <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
+
+        <div class="bg-gray-800 p-6 rounded-lg testimonial-card" data-aos="fade-up">
+            <p class="italic">“ShoreSynk helped us automate our entire CI/CD pipeline on AKS. Their expertise in GitHub Actions and Helm deployments was invaluable.”</p>
+            <p class="mt-4 font-semibold text-blue-300">– Jamie L., CTO, OceanNet Systems</p>
+        </div>
+
+        <div class="bg-gray-800 p-6 rounded-lg testimonial-card" data-aos="fade-up" data-aos-delay="100">
+            <p class="italic">“Our B2B integrations have never been smoother. ShoreSynk transformed our IBM Sterling setup and onboarded partners twice as fast.”</p>
+            <p class="mt-4 font-semibold text-blue-300">– Ricardo M., Integration Lead, TradeBridge Ltd</p>
+        </div>
+
+        <div class="bg-gray-800 p-6 rounded-lg testimonial-card" data-aos="fade-up" data-aos-delay="200">
+            <p class="italic">“The DevOps observability dashboard they built with Instana is a game-changer. We now catch issues before they hit production.”</p>
+            <p class="mt-4 font-semibold text-blue-300">– Priya K., Platform Manager, RetailWave</p>
+        </div>
+
+        <div class="bg-gray-800 p-6 rounded-lg testimonial-card" data-aos="fade-up" data-aos-delay="300">
+            <p class="italic">“From containers to cloud, ShoreSynk guided our OpenShift migration flawlessly. Their team delivered on time and under budget.”</p>
+            <p class="mt-4 font-semibold text-blue-300">– Ahmed D., Head of Engineering, FinCore Group</p>
+        </div>
+
+        <div class="bg-gray-800 p-6 rounded-lg testimonial-card" data-aos="fade-up" data-aos-delay="400">
+            <p class="italic">“Their ITX support during our modernization effort made a huge difference. We now process data faster with fewer errors.”</p>
+            <p class="mt-4 font-semibold text-blue-300">– Emily R., Data Architect, MediSync Health</p>
+        </div>
+
+        <div class="bg-gray-800 p-6 rounded-lg testimonial-card" data-aos="fade-up" data-aos-delay="500">
+            <p class="italic">“ShoreSynk is the kind of partner you want for mission-critical transformations. Strategic, responsive, and technically sharp.”</p>
+            <p class="mt-4 font-semibold text-blue-300">– Tobias F., CIO, NextTransit Logistics</p>
+        </div>
+
+    </div>
+</section>
+
+<footer class="bg-gray-900 py-6 text-center text-gray-500 text-sm">
+    &copy; 2025 ShoreSynk. All rights reserved.
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({ duration: 1000, once: true });
+</script>
+</body>
+</html>
