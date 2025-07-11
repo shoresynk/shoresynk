@@ -3,17 +3,15 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ShoreSynk | DevOps & IBM Integration Consultancy</title>
+    <title>About ShoreSynk</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/lucide@latest"></script>
     <style>
-        @keyframes fadeInUp {
-          from { opacity: 0; transform: translateY(20px); }
-          to { opacity: 1; transform: translateY(0); }
-        }
-        .animate-fade-in-up {
-          animation: fadeInUp 1s ease-out forwards;
+        .bg-hero {
+          background-image: url('https://tse4.mm.bing.net/th/id/OIP.Zzp7vDEHLs-ldM_Fr9gBeAHaE-?pid=Api');
+          background-size: cover;
+          background-position: center;
         }
         /* Custom styles for mobile menu toggle */
         .mobile-menu-open {
@@ -22,7 +20,6 @@
     </style>
 </head>
 <body class="bg-gray-900 text-white font-sans">
-<!-- Navigation -->
 <header class="bg-gray-800 shadow-md sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
         <div class="flex items-center gap-3">
@@ -33,10 +30,10 @@
         <nav class="hidden md:flex space-x-6 text-sm">
             <a href="index.html" class="hover:text-blue-400 transition duration-200">Home</a>
             <a href="about.html" class="hover:text-blue-400 transition duration-200">About Us</a>
-            <a href="#integration" class="hover:text-blue-400 transition duration-200">Integration</a>
-            <a href="#devops" class="hover:text-blue-400 transition duration-200">DevOps</a>
-            <a href="#testimonials" class="hover:text-blue-400 transition duration-200">Testimonials</a>
-            <a href="#contact" class="hover:text-blue-400 transition duration-200">Contact</a>
+            <a href="integration.html" class="hover:text-blue-400 transition duration-200">Integration</a>
+            <a href="index.html#devops" class="hover:text-blue-400 transition duration-200">DevOps</a>
+            <a href="index.html#testimonials" class="hover:text-blue-400 transition duration-200">Testimonials</a>
+            <a href="index.html#contact" class="hover:text-blue-400 transition duration-200">Contact</a>
         </nav>
         <!-- Mobile Menu Button -->
         <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
@@ -49,117 +46,96 @@
     <nav id="mobile-menu" class="hidden md:hidden flex-col items-center pb-4 space-y-3 bg-gray-800 border-t border-gray-700">
         <a href="index.html" class="block text-white hover:text-blue-400 transition duration-200 py-2">Home</a>
         <a href="about.html" class="block text-white hover:text-blue-400 transition duration-200 py-2">About Us</a>
-        <a href="#integration" class="block text-white hover:text-blue-400 transition duration-200 py-2">Integration</a>
-        <a href="#devops" class="block text-white hover:text-blue-400 transition duration-200 py-2">DevOps</a>
-        <a href="#testimonials" class="block text-white hover:text-blue-400 transition duration-200 py-2">Testimonials</a>
-        <a href="#contact" class="block text-white hover:text-blue-400 transition duration-200 py-2">Contact</a>
+        <a href="integration.html" class="block text-white hover:text-blue-400 transition duration-200 py-2">Integration</a>
+        <a href="index.html#devops" class="block text-white hover:text-blue-400 transition duration-200 py-2">DevOps</a>
+        <a href="index.html#testimonials" class="block text-white hover:text-blue-400 transition duration-200 py-2">Testimonials</a>
+        <a href="index.html#contact" class="block text-white hover:text-blue-400 transition duration-200 py-2">Contact</a>
     </nav>
 </header>
 
-<!-- Hero Section with Background Image -->
-<section class="relative py-20 text-center text-white overflow-hidden">
-    <img src="https://tse4.mm.bing.net/th/id/OIP.Zzp7vDEHLs-ldM_Fr9gBeAHaE-?pid=Api" alt="Abstract cloud tech background"
-         class="absolute inset-0 w-full h-full object-cover opacity-40">
-    <div class="relative z-10 max-w-3xl mx-auto px-4 animate-fade-in-up">
-        <h2 class="text-4xl sm:text-5xl font-extrabold mb-4">DevOps and Integration Experts</h2>
-        <p class="text-lg sm:text-xl mb-6">Accelerate your digital transformation with ShoreSynk's world-class DevOps consulting, seamless IBM product integrations, and automation-first strategies.</p>
-        <a href="#contact" class="inline-block bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-medium transition duration-300 transform hover:scale-105">Get in Touch</a>
+<section class="bg-hero py-20 text-center text-white">
+    <div class="max-w-4xl mx-auto px-4">
+        <h2 class="text-4xl sm:text-5xl font-bold mb-4" data-aos="fade-up">Our Purpose is to Empower Innovation</h2>
+        <p class="text-lg sm:text-xl" data-aos="fade-up" data-aos-delay="100">ShoreSynk exists to help enterprises modernize, automate, and integrate faster than ever before.</p>
     </div>
 </section>
 
-<!-- Why Choose ShoreSynk -->
-<section class="py-16 bg-gray-900" id="about">
-    <div class="max-w-6xl mx-auto px-4">
-        <h3 class="text-3xl sm:text-4xl font-bold mb-10 text-center text-blue-400" data-aos="fade-up">Why Choose ShoreSynk?</h3>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10">
-            <div class="bg-gray-800 p-6 rounded-xl shadow hover:shadow-2xl transform hover:scale-105 transition duration-300" data-aos="fade-up" data-aos-delay="100">
-                <h4 class="text-xl font-semibold mb-2 text-blue-300">End-to-End DevOps Expertise</h4>
-                <p>From planning to continuous deployment, we architect and execute robust DevOps solutions that ensure speed, security, and scalability.</p>
+<section id="story" class="py-16 bg-gray-900">
+    <div class="max-w-5xl mx-auto px-4 text-center">
+        <h3 class="text-3xl sm:text-4xl text-blue-400 font-bold mb-6" data-aos="fade-up">The ShoreSynk Journey</h3>
+        <p class="text-lg sm:text-xl" data-aos="fade-up" data-aos-delay="100">Founded by passionate integration experts, ShoreSynk is driven to remove complexity from enterprise systems. With decades of experience across IBM Sterling, hybrid-cloud DevOps, and enterprise observability, we’ve helped organizations across industries deliver real outcomes—on time and at scale.</p>
+    </div>
+</section>
+
+<section id="mission" class="bg-gray-800 py-16">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+        <h3 class="text-3xl sm:text-4xl text-blue-400 font-bold mb-6" data-aos="fade-up">Our Mission</h3>
+        <p class="text-lg sm:text-xl" data-aos="fade-up" data-aos-delay="100">We empower businesses to accelerate transformation by integrating critical systems, automating processes, and delivering strategic DevOps that work at enterprise scale. Your success is our mission.</p>
+    </div>
+</section>
+
+<section id="values" class="py-16 bg-gray-900">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+        <h3 class="text-3xl sm:text-4xl font-bold text-blue-400 mb-10" data-aos="fade-up">What Sets Us Apart</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 text-left">
+            <div class="flex items-start gap-4 bg-gray-800 p-6 rounded-xl shadow hover:shadow-2xl transform hover:scale-105 transition duration-300" data-aos="fade-up" data-aos-delay="100">
+                <i data-lucide="badge-check" class="text-blue-300 w-8 h-8 flex-shrink-0"></i>
+                <div>
+                    <h4 class="text-xl font-semibold text-blue-300 mb-1">Proven IBM Expertise</h4>
+                    <p class="text-base">We’ve built and scaled Sterling, ITX, and B2Bi solutions for some of the most demanding enterprise environments.</p>
+                </div>
             </div>
-            <div class="bg-gray-800 p-6 rounded-xl shadow hover:shadow-2xl transform hover:scale-105 transition duration-300" data-aos="fade-up" data-aos-delay="200">
-                <h4 class="text-xl font-semibold mb-2 text-blue-300">IBM Product Integration</h4>
-                <p>We specialize in integrating IBM Sterling B2B, File Gateway, ITX, and cutting-edge AI with Watsonx.ai — all seamlessly into your workflows.</p>
+            <div class="flex items-start gap-4 bg-gray-800 p-6 rounded-xl shadow hover:shadow-2xl transform hover:scale-105 transition duration-300" data-aos="fade-up" data-aos-delay="200">
+                <i data-lucide="cpu" class="text-blue-300 w-8 h-8 flex-shrink-0"></i>
+                <div>
+                    <h4 class="text-xl font-semibold text-blue-300 mb-1">Automation-First DevOps</h4>
+                    <p class="text-base">Our automation-led delivery frameworks help teams reduce lead time, eliminate risk, and gain observability.</p>
+                </div>
             </div>
-            <div class="bg-gray-800 p-6 rounded-xl shadow hover:shadow-2xl transform hover:scale-105 transition duration-300" data-aos="fade-up" data-aos-delay="300">
-                <h4 class="text-xl font-semibold mb-2 text-blue-300">Observability with Instana</h4>
-                <p>Gain real-time insights with IBM Instana for system health and performance monitoring across your entire infrastructure.</p>
+            <div class="flex items-start gap-4 bg-gray-800 p-6 rounded-xl shadow hover:shadow-2xl transform hover:scale-105 transition duration-300" data-aos="fade-up" data-aos-delay="300">
+                <i data-lucide="activity" class="text-blue-300 w-8 h-8 flex-shrink-0"></i>
+                <div>
+                    <h4 class="text-xl font-semibold text-blue-300 mb-1">Deep Infrastructure Insight</h4>
+                    <p class="text-base">From containerized pipelines to hybrid cloud observability with Instana, we bring full-stack transparency.</p>
+                </div>
             </div>
-            <div class="bg-gray-800 p-6 rounded-xl shadow hover:shadow-2xl transform hover:scale-105 transition duration-300" data-aos="fade-up" data-aos-delay="400">
-                <h4 class="text-xl font-semibold mb-2 text-blue-300">Proven Track Record</h4>
-                <p>Trusted by enterprises to deliver results on complex modernization and integration projects globally.</p>
+            <div class="flex items-start gap-4 bg-gray-800 p-6 rounded-xl shadow hover:shadow-2xl transform hover:scale-105 transition duration-300" data-aos="fade-up" data-aos-delay="400">
+                <i data-lucide="handshake" class="text-blue-300 w-8 h-8 flex-shrink-0"></i>
+                <div>
+                    <h4 class="text-xl font-semibold text-blue-300 mb-1">Client-First Approach</h4>
+                    <p class="text-base">We work closely with your teams and tailor every solution to your business, not just your tech stack.</p>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Testimonials Carousel -->
-<section id="testimonials" class="bg-gray-800 py-16">
-    <div class="max-w-4xl mx-auto px-4 text-center" data-aos="fade-up">
-        <h3 class="text-3xl sm:text-4xl font-bold mb-10 text-blue-400">What Our Clients Say</h3>
-        <div class="swiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide p-6 bg-gray-900 rounded-lg shadow-lg">
-                    <blockquote class="italic text-base sm:text-lg">“ShoreSynk optimized our deployment pipeline end-to-end.”</blockquote>
-                    <p class="mt-2 font-semibold text-sm sm:text-base">– Tech Lead, Acme Corp</p>
-                </div>
-                <div class="swiper-slide p-6 bg-gray-900 rounded-lg shadow-lg">
-                    <blockquote class="italic text-base sm:text-lg">“Impressive integration speed and stability with IBM Sterling.”</blockquote>
-                    <p class="mt-2 font-semibold text-sm sm:text-base">– Operations Manager, GlobalTradeX</p>
-                </div>
-            </div>
-            <div class="swiper-pagination mt-6"></div>
-        </div>
+<section id="team" class="bg-gray-800 py-16">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+        <h3 class="text-3xl sm:text-4xl text-blue-400 font-bold mb-6" data-aos="fade-up">Leadership</h3>
+        <p class="text-lg sm:text-xl" data-aos="fade-up" data-aos-delay="100">Our leadership team brings deep domain expertise across DevOps, integration, cloud transformation, and enterprise architecture.</p>
     </div>
 </section>
 
-<!-- Contact -->
-<section class="bg-gray-800 py-16" id="contact">
+<section id="contact" class="bg-gray-900 py-16">
     <div class="max-w-4xl mx-auto px-4 text-center" data-aos="fade-up">
-        <h3 class="text-3xl sm:text-4xl font-bold mb-6 text-blue-400">Contact Us</h3>
-        <p class="mb-4 text-base sm:text-lg">Email: <a href="mailto:info@shoresynk.com" class="text-blue-300 underline hover:text-blue-400 transition duration-200">info@shoresynk.com</a></p>
-        <a href="mailto:info@shoresynk.com" class="inline-block mt-4 bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg font-medium transition duration-300 transform hover:scale-105">Email Us</a>
+        <h3 class="text-3xl sm:text-4xl font-bold mb-6 text-blue-400">Connect with Us</h3>
+        <p class="text-base sm:text-lg">Email: <a href="mailto:info@shoresynk.com" class="text-blue-300 underline hover:text-blue-400 transition duration-200">info@shoresynk.com</a></p>
     </div>
 </section>
 
-<!-- Footer -->
 <footer class="bg-gray-900 py-6 text-center text-gray-500 text-sm">
     &copy; 2025 ShoreSynk. All rights reserved.
 </footer>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <script>
     AOS.init({
         duration: 1000, // Animation duration
         once: true,     // Whether animation should happen only once - while scrolling down
     });
 
-    const swiper = new Swiper('.swiper', {
-      loop: true,
-      autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      // Responsive breakpoints
-      breakpoints: {
-        640: { // sm
-          slidesPerView: 1,
-          spaceBetween: 20,
-        },
-        768: { // md
-          slidesPerView: 1,
-          spaceBetween: 30,
-        },
-        1024: { // lg
-          slidesPerView: 1,
-          spaceBetween: 40,
-        },
-      }
-    });
+    lucide.createIcons();
 
     // Mobile menu toggle functionality
     const mobileMenuButton = document.getElementById('mobile-menu-button');
