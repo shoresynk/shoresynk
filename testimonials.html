@@ -14,35 +14,36 @@
           transform: translateY(-5px);
           box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
         }
-        /* Style for the hero section background */
         .hero-background {
-            background-image: url('https://tse4.mm.bing.net/th/id/OIP.Zzp7vDEHLs-ldM_Fr9gBeAHaE-?pid=Api');
-            background-size: cover;
-            background-position: center;
-            position: relative;
+          background-image: url('https://tse4.mm.bing.net/th/id/OIP.Zzp7vDEHLs-ldM_Fr9gBeAHaE-?pid=Api');
+          background-size: cover;
+          background-position: center;
+          position: relative;
         }
         .hero-background::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: rgba(0, 0, 0, 0.6);
         }
         .hero-content {
-            position: relative;
-            z-index: 10;
+          position: relative;
+          z-index: 10;
         }
     </style>
 </head>
 <body class="bg-gray-900 text-white font-sans">
+
+<!-- Header with logo and branding -->
 <header class="bg-gray-800 shadow-md sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-        <div class="flex items-center gap-3">
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABHNCSVQICAgIfAhkiAAAAaNJRefUWIXtlz9LAlEQx3+vFwpChcoKoUFUrkFOoNBRKb2CjaXEBoVdoVCrgFoUF0dHICL3EkDgZ3uzNy7Igc0YcdkZkZzMn5c++z9+Z9fMwUQY5yT8Du8BDXAGFoU4nQkUq+cAs1HnM6kFd+EPMAo29yxAk0QT4SGgLzqAe6gwJhzF1CIx2HjsdC5FXEszgB8BhZ5iOt0J+WzZkBrN1p1LRt2B3svm4lbjTeQgNvdESFdzHJ1LbgQuE7apZpBPvpr+FfAqMn3jAA/hBRzEWBdjCM7ScyiO09A4iVKcfwNBeRfdOdq1YJ7BDshcOC4m3OSIPniXRNa4hc2WSQ+RbZ6J7y9MiStPuAvEZccyHKR7bpjkwL5s0wVeqtvKN7AzT0vvgQuyKcN73PywPtBQ6m4k5W4kp64+ZwqBnvgRKOkg39yfpczj84ZP9UqnKoq+pXKhAAAAAElFTkSuQmCC" alt="ShoreSynk Logo" class="h-10 w-auto rounded-md">
-            <h1 class="text-2xl font-bold text-blue-400">ShoreSynk</h1>
-        </div>
+        <a href="index.html" class="flex items-center space-x-3">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABHNCSVQICAgIfAhkiAAAAaNJRefUWIXtlz9LAlEQx3+vFwpChcoKoUFUrkFOoNBRKb2CjaXEBoVdoVCrgFoUF0dHICL3EkDgZ3uzNy7Igc0YcdkZkZzMn5c++z9+Z9fMwUQY5yT8Du8BDXAGFoU4nQkUq+cAs1HnM6kFd+EPMAo29yxAk0QT4SGgLzqAe6gwJhzF1CIx2HjsdC5FXEszgB8BhZ5iOt0J+WzZkBrN1p1LRt2B3svm4lbjTeQgNvdESFdzHJ1LbgQuE7apZpBPvpr+FfAqMn3jAA/hBRzEWBdjCM7ScyiO09A4iVKcfwNBeRfdOdq1YJ7BDshcOC4m3OSIPniXRNa4hc2WSQ+RbZ6J7y9MiStPuAvEZccyHKR7bpjkwL5s0wVeqtvKN7AzT0vvgQuyKcN73PywPtBQ6m4k5W4kp64+ZwqBnvgRKOkg39yfpczj84ZP9UqnKoq+pXKhAAAAAElFTkSuQmCC" alt="ShoreSynk Logo" class="h-10 w-auto rounded-md" />
+            <span class="text-xl font-bold text-blue-400 tracking-tight hover:text-blue-300 transition">ShoreSynk</span>
+        </a>
         <nav class="hidden md:flex space-x-6 text-sm">
             <a href="index.html" class="hover:text-blue-400">Home</a>
             <a href="about.html" class="hover:text-blue-400">About Us</a>
@@ -54,56 +55,56 @@
     </div>
 </header>
 
+<!-- Hero Section -->
 <section class="py-20 text-center px-6 hero-background">
     <div class="hero-content">
         <h2 class="text-4xl sm:text-5xl font-extrabold text-blue-400 mb-4" data-aos="fade-up">What Our Clients Say</h2>
-        <p class="text-lg sm:text-xl max-w-3xl mx-auto mb-10 text-white" data-aos="fade-up" data-aos-delay="100">Hear directly from businesses that have transformed their operations with ShoreSynk's expertise in DevOps, integration, and modernization.</p>
+        <p class="text-lg sm:text-xl max-w-3xl mx-auto mb-10 text-white" data-aos="fade-up" data-aos-delay="100">
+            Hear directly from businesses that have transformed their operations with ShoreSynk's expertise in DevOps, integration, and modernization.
+        </p>
     </div>
 </section>
 
+<!-- Testimonial Cards -->
 <section class="py-16 bg-gray-900 text-center px-6">
     <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
-
         <div class="bg-gray-800 p-6 rounded-lg testimonial-card" data-aos="fade-up">
             <p class="italic">“ShoreSynk helped us automate our entire CI/CD pipeline on AKS. Their expertise in GitHub Actions and Helm deployments was invaluable.”</p>
             <p class="mt-4 font-semibold text-blue-300">– Jamie L., CTO, OceanNet Systems</p>
         </div>
-
         <div class="bg-gray-800 p-6 rounded-lg testimonial-card" data-aos="fade-up" data-aos-delay="100">
             <p class="italic">“Our B2B integrations have never been smoother. ShoreSynk transformed our IBM Sterling setup and onboarded partners twice as fast.”</p>
             <p class="mt-4 font-semibold text-blue-300">– Ricardo M., Integration Lead, TradeBridge Ltd</p>
         </div>
-
         <div class="bg-gray-800 p-6 rounded-lg testimonial-card" data-aos="fade-up" data-aos-delay="200">
             <p class="italic">“The DevOps observability dashboard they built with Instana is a game-changer. We now catch issues before they hit production.”</p>
             <p class="mt-4 font-semibold text-blue-300">– Priya K., Platform Manager, RetailWave</p>
         </div>
-
         <div class="bg-gray-800 p-6 rounded-lg testimonial-card" data-aos="fade-up" data-aos-delay="300">
             <p class="italic">“From containers to cloud, ShoreSynk guided our OpenShift migration flawlessly. Their team delivered on time and under budget.”</p>
             <p class="mt-4 font-semibold text-blue-300">– Ahmed D., Head of Engineering, FinCore Group</p>
         </div>
-
         <div class="bg-gray-800 p-6 rounded-lg testimonial-card" data-aos="fade-up" data-aos-delay="400">
             <p class="italic">“Their ITX support during our modernization effort made a huge difference. We now process data faster with fewer errors.”</p>
             <p class="mt-4 font-semibold text-blue-300">– Emily R., Data Architect, MediSync Health</p>
         </div>
-
         <div class="bg-gray-800 p-6 rounded-lg testimonial-card" data-aos="fade-up" data-aos-delay="500">
             <p class="italic">“ShoreSynk is the kind of partner you want for mission-critical transformations. Strategic, responsive, and technically sharp.”</p>
             <p class="mt-4 font-semibold text-blue-300">– Tobias F., CIO, NextTransit Logistics</p>
         </div>
-
     </div>
 </section>
 
+<!-- Footer -->
 <footer class="bg-gray-900 py-6 text-center text-gray-500 text-sm">
     &copy; 2025 ShoreSynk. All rights reserved.
 </footer>
 
+<!-- Scripts -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init({ duration: 1000, once: true });
 </script>
+
 </body>
 </html>
