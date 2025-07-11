@@ -20,8 +20,7 @@
             <a href="about.html" class="hover:text-blue-400">About Us</a>
             <a href="integration.html" class="hover:text-blue-400">Integration</a>
             <a href="devops.html" class="font-semibold text-white">DevOps</a>
-            <a href="index.html#testimonials" class="hover:text-blue-400">Testimonials</a>
-            <a href="index.html#contact" class="hover:text-blue-400">Contact</a>
+            <a href="testimonials.html" class="hover:text-blue-400">Testimonials</a> <a href="index.html#contact" class="hover:text-blue-400">Contact</a>
         </nav>
         <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -34,8 +33,7 @@
         <a href="about.html" class="block text-white hover:text-blue-400 transition py-2">About Us</a>
         <a href="integration.html" class="block text-white hover:text-blue-400 transition py-2">Integration</a>
         <a href="devops.html" class="block text-white hover:text-blue-400 transition py-2">DevOps</a>
-        <a href="index.html#testimonials" class="block text-white hover:text-blue-400 transition py-2">Testimonials</a>
-        <a href="index.html#contact" class="block text-white hover:text-blue-400 transition py-2">Contact</a>
+        <a href="testimonials.html" class="block text-white hover:text-blue-400 transition py-2">Testimonials</a> <a href="index.html#contact" class="block text-white hover:text-blue-400 transition py-2">Contact</a>
     </nav>
 </header>
 
@@ -126,8 +124,11 @@
 
     mobileMenu.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
-        mobileMenu.classList.add('hidden');
-        mobileMenu.classList.remove('mobile-menu-open');
+        // Adding a small timeout to allow navigation before closing the menu
+        setTimeout(() => {
+          mobileMenu.classList.add('hidden');
+          mobileMenu.classList.remove('mobile-menu-open');
+        }, 150); // Adjust delay as needed for smoother transition
       });
     });
 </script>
