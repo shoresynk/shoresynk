@@ -39,12 +39,13 @@
         .btn-gradient:hover {
             background-image: linear-gradient(to right, #2563EB, #1D4ED8);
         }
-        /* New style for rotating text */
+        /* New style for rotating text container and text */
         .rotating-text-container {
             min-height: 120px; /* Adjust based on expected text line height and number of lines */
             display: flex;
             align-items: center;
             justify-content: center;
+            position: relative; /* Added for absolute positioning of child */
         }
         .rotating-text {
             font-weight: 800; /* Extra bold for impact */
@@ -52,6 +53,15 @@
             text-shadow: 0px 0px 10px rgba(59, 130, 246, 0.9); /* Stronger blue glow */
             opacity: 0;
             transition: opacity 1s ease-in-out;
+            position: absolute; /* Ensures text doesn't affect layout of other elements */
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center; /* Ensure multi-line text is centered */
         }
         .rotating-text.fade-in {
             opacity: 1;
@@ -113,7 +123,6 @@
             At ShoreSynk, we engineer seamless, secure, and scalable solutions that drive unparalleled efficiency and innovation across your enterprise.
             We are your dedicated partners in mastering the complexities of modern software delivery and robust B2B integration.
         </p>
-        <!-- Updated href to mailto link -->
         <a href="mailto:info@shoresynk.com" class="btn-gradient px-8 py-4 rounded-xl font-bold text-lg transition transform hover:scale-105 shadow-lg">
             Unlock Your Potential Today
         </a>
@@ -206,7 +215,6 @@
             Partner with ShoreSynk and unlock your organization's full potential. Let's discuss how our specialized DevOps and IBM Integration expertise can drive your success.
         </p>
         <p class="mb-4 text-lg sm:text-xl font-medium">Email: <a href="mailto:info@shoresynk.com" class="text-blue-300 underline hover:text-blue-400 transition-colors duration-300">info@shoresynk.com</a></p>
-        <!-- Updated href to mailto link -->
         <a href="mailto:info@shoresynk.com" class="btn-gradient px-8 py-4 rounded-xl font-bold text-lg transition duration-300 transform hover:scale-105 shadow-lg">
             Get in Touch
         </a>
