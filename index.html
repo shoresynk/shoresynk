@@ -7,6 +7,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!-- Lucide Icons for visual flair -->
+    <script src="https://unpkg.com/lucide@latest"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
         body {
@@ -134,39 +136,57 @@
         <h2 class="text-4xl md:text-5xl font-bold text-center text-blue-400 mb-14">Expertise That Delivers: Our Core Capabilities</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             <div class="bg-gray-800 p-8 rounded-xl shadow-lg border border-gray-700 hover:border-blue-500 hover:shadow-2xl transform hover:scale-105 transition-all duration-300" data-aos="fade-up">
-                <h3 class="text-2xl font-semibold text-blue-300 mb-4">CI/CD & GitOps Acceleration</h3>
+                <div class="flex items-center mb-4">
+                    <i data-lucide="git-fork" class="text-blue-300 w-8 h-8 flex-shrink-0 mr-3"></i>
+                    <h3 class="text-2xl font-semibold text-blue-300">CI/CD & GitOps Acceleration</h3>
+                </div>
                 <p class="text-gray-300 leading-relaxed">
-                    From concept to production, we implement advanced CI/CD pipelines and GitOps workflows using **GitHub Actions, GitLab CI, Jenkins, Argo CD, and Flux CD**. We champion **Infrastructure as Code (Terraform, Ansible)** and configuration management with **Kustomize** to ensure immutable, repeatable, and auditable deployments, drastically reducing time-to-market.
+                    Unleash rapid, reliable software delivery. We architect and implement cutting-edge CI/CD pipelines and GitOps workflows using **GitHub Actions, GitLab CI, Jenkins, Argo CD, and Flux CD**. Our mastery of **Infrastructure as Code (Terraform, Ansible)** and configuration management with **Kustomize** ensures immutable, auditable, and lightning-fast deployments, drastically reducing your time-to-market.
                 </p>
             </div>
             <div class="bg-gray-800 p-8 rounded-xl shadow-lg border border-gray-700 hover:border-blue-500 hover:shadow-2xl transform hover:scale-105 transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
-                <h3 class="text-2xl font-semibold text-blue-300 mb-4">IBM Sterling Integration Mastery</h3>
+                <div class="flex items-center mb-4">
+                    <i data-lucide="plug-zap" class="text-blue-300 w-8 h-8 flex-shrink-0 mr-3"></i>
+                    <h3 class="text-2xl font-semibold text-blue-300">IBM Sterling Integration Mastery</h3>
+                </div>
                 <p class="text-gray-300 leading-relaxed">
-                    As specialists in the **IBM Sterling B2B Integrator, File Gateway, Transformation Extender (ITX), Secure Proxy, and Connect:Direct**, we design, implement, and optimize your mission-critical B2B and Managed File Transfer (MFT) solutions for maximum security, throughput, and compliance. We ensure seamless data exchange across your partner ecosystem.
+                    Seamlessly connect your enterprise. As specialists in the **IBM Sterling B2B Integrator, File Gateway, Transformation Extender (ITX), Secure Proxy, and Connect:Direct**, we design, implement, and optimize your mission-critical B2B and Managed File Transfer (MFT) solutions. Expect maximum security, unparalleled throughput, and iron-clad compliance, ensuring flawless data exchange across your partner ecosystem.
                 </p>
             </div>
             <div class="bg-gray-800 p-8 rounded-xl shadow-lg border border-gray-700 hover:border-blue-500 hover:shadow-2xl transform hover:scale-105 transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
-                <h3 class="2xl font-semibold text-blue-300 mb-4">Cloud-Native & Container Orchestration</h3>
+                <div class="flex items-center mb-4">
+                    <i data-lucide="cloud" class="text-blue-300 w-8 h-8 flex-shrink-0 mr-3"></i>
+                    <h3 class="text-2xl font-semibold text-blue-300">Cloud-Native & Container Orchestration</h3>
+                </div>
                 <p class="text-gray-300 leading-relaxed">
-                    We harness the power of containerization and orchestration, deploying and managing applications on leading platforms like **Azure Kubernetes Service (AKS), Red Hat OpenShift, Amazon EKS, and Google Kubernetes Engine (GKE)**. Our expertise covers **Docker, Helm, and MicroK8s**, ensuring scalable, resilient, and highly available microservices architectures.
+                    Build for the future, today. We harness the immense power of containerization and orchestration, expertly deploying and managing applications on leading platforms like **Azure Kubernetes Service (AKS), Red Hat OpenShift, Amazon EKS, and Google Kubernetes Engine (GKE)**. Our deep expertise in **Docker, Helm, and MicroK8s** guarantees scalable, resilient, and highly available microservices architectures that propel your business forward.
                 </p>
             </div>
             <div class="bg-gray-800 p-8 rounded-xl shadow-lg border border-gray-700 hover:border-blue-500 hover:shadow-2xl transform hover:scale-105 transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
-                <h3 class="text-2xl font-semibold text-blue-300 mb-4">Advanced Observability & AIOps</h3>
+                <div class="flex items-center mb-4">
+                    <i data-lucide="eye" class="text-blue-300 w-8 h-8 flex-shrink-0 mr-3"></i>
+                    <h3 class="text-2xl font-semibold text-blue-300 mb-4">Advanced Observability & AIOps</h3>
+                </div>
                 <p class="text-gray-300 leading-relaxed">
-                    Gain unparalleled visibility into your systems with our comprehensive observability solutions. We implement **IBM Instana** for automated APM, distributed tracing, and root cause analysis, complemented by **Prometheus, Grafana, and the ELK Stack (Elasticsearch, Logstash, Kibana)** for powerful logging, metrics, and analytics, enabling proactive issue resolution and performance optimization.
+                    See everything, predict anything. Gain unparalleled, real-time visibility into your complex systems with our comprehensive observability solutions. We implement **IBM Instana** for automated APM, distributed tracing, and AI-powered root cause analysis, seamlessly complemented by **Prometheus, Grafana, and the ELK Stack (Elasticsearch, Logstash, Kibana)**. This empowers you with powerful logging, metrics, and intelligent analytics, enabling proactive issue resolution and continuous performance optimization.
                 </p>
             </div>
             <div class="bg-gray-800 p-8 rounded-xl shadow-lg border border-gray-700 hover:border-blue-500 hover:shadow-2xl transform hover:scale-105 transition-all duration-300" data-aos="fade-up" data-aos-delay="400">
-                <h3 class="text-2xl font-semibold text-blue-300 mb-4">Hybrid Cloud & Enterprise Modernization</h3>
+                <div class="flex items-center mb-4">
+                    <i data-lucide="server" class="text-blue-300 w-8 h-8 flex-shrink-0 mr-3"></i>
+                    <h3 class="text-2xl font-semibold text-blue-300 mb-4">Hybrid Cloud & Enterprise Modernization</h3>
+                </div>
                 <p class="text-gray-300 leading-relaxed">
-                    Navigate the complexities of modern cloud environments with confidence. We provide expert guidance and implementation for **Azure, AWS, and IBM Cloud**, focusing on cloud-native architectures, cost optimization, security best practices, and seamless integration for hybrid cloud deployments that unlock agility and scalability.
+                    Chart your course to the cloud with confidence. We provide expert guidance and hands-on implementation for seamless hybrid cloud deployments across **Azure, AWS, and IBM Cloud**. Our focus is on architecting cloud-native solutions, optimizing costs, implementing robust security best practices, and integrating legacy systems, unlocking unprecedented agility and scalability for your enterprise.
                 </p>
             </div>
             <div class="bg-gray-800 p-8 rounded-xl shadow-lg border border-gray-700 hover:border-blue-500 hover:shadow-2xl transform hover:scale-105 transition-all duration-300" data-aos="fade-up" data-aos-delay="500">
-                <h3 class="text-2xl font-semibold text-blue-300 mb-4">Enterprise Automation & Scripting</h3>
+                <div class="flex items-center mb-4">
+                    <i data-lucide="bot" class="text-blue-300 w-8 h-8 flex-shrink-0 mr-3"></i>
+                    <h3 class="text-2xl font-semibold text-blue-300 mb-4">Enterprise Automation & Scripting</h3>
+                </div>
                 <p class="text-gray-300 leading-relaxed">
-                    Automate repetitive tasks and streamline operations with our expertise in scripting languages like **Python, Bash, and PowerShell**, alongside powerful automation tools such as **Ansible and Chef**. We build intelligent, self-healing systems that reduce manual effort, minimize errors, and free your teams to innovate.
+                    Automate your way to peak efficiency. We eliminate repetitive tasks and streamline complex operations with our deep expertise in scripting languages like **Python, Bash, and PowerShell**, alongside powerful automation tools such as **Ansible and Chef**. We build intelligent, self-healing systems that dramatically reduce manual effort, virtually eliminate errors, and empower your teams to focus on innovation, not toil.
                 </p>
             </div>
         </div>
@@ -177,31 +197,31 @@
     <div class="max-w-6xl mx-auto px-6 text-center" data-aos="fade-up">
         <h2 class="text-3xl sm:text-4xl font-bold text-blue-400 mb-8">Quantifiable Impact: Our Client Success Stories</h2>
         <p class="text-lg mb-10 max-w-4xl mx-auto">
-            At ShoreSynk, our results speak for themselves. We don't just advise; we deliver tangible improvements that accelerate your business outcomes and solidify your competitive edge.
+            At ShoreSynk, our results speak for themselves. We don't just advise; we deliver tangible improvements that accelerate your business outcomes and solidify your competitive edge. Discover how we've transformed operations for leading enterprises.
         </p>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left max-w-4xl mx-auto">
             <div class="bg-gray-900 p-6 rounded-xl shadow-md border border-gray-700 hover:border-blue-500 hover:shadow-2xl transform hover:scale-105 transition-all duration-300" data-aos="fade-right">
                 <h4 class="text-xl font-semibold text-blue-300 mb-2">📈 Accelerated Software Delivery</h4>
                 <p class="text-gray-300">
-                    Spearheaded a complete GitOps CI/CD transformation for a leading financial services provider, resulting in an **80% reduction in deployment times** and a **95% decrease in deployment-related incidents** across their critical applications.
+                    We spearheaded a complete GitOps CI/CD transformation for a leading financial services provider, resulting in an astounding **80% reduction in deployment times** and a remarkable **95% decrease in deployment-related incidents** across their critical applications. Experience unparalleled speed and stability.
                 </p>
             </div>
             <div class="bg-gray-900 p-6 rounded-xl shadow-md border border-gray-700 hover:border-blue-500 hover:shadow-2xl transform hover:scale-105 transition-all duration-300" data-aos="fade-left">
                 <h4 class="text-xl font-semibold text-blue-300 mb-2">🔐 Fortified B2B Integration</h4>
                 <p class="text-gray-300">
-                    Engineered and deployed high-volume, secure IBM Sterling B2Bi and File Gateway solutions for a global logistics giant, achieving **zero failed partner onboardings** and ensuring **100% compliance** with stringent data exchange regulations.
+                    For a global logistics giant, we engineered and deployed high-volume, secure IBM Sterling B2Bi and File Gateway solutions. The outcome? **Zero failed partner onboardings** and a guarantee of **100% compliance** with stringent data exchange regulations. Secure your critical business communications with confidence.
                 </p>
             </div>
             <div class="bg-gray-900 p-6 rounded-xl shadow-md border border-gray-700 hover:border-blue-500 hover:shadow-2xl transform hover:scale-105 transition-all duration-300" data-aos="fade-right" data-aos-delay="100">
                 <h4 class="text-xl font-semibold text-blue-300 mb-2">⚙️ Scalable Cloud-Native Operations</h4>
                 <p class="text-gray-300">
-                    Designed and implemented a multi-cluster AKS automation framework using Argo CD and Helm for a Fortune 500 manufacturing firm, enabling **seamless, zero-downtime deployments** of complex microservices and **reducing operational overhead by 40%**.
+                    We designed and implemented a robust multi-cluster AKS automation framework using Argo CD and Helm for a Fortune 500 manufacturing firm. This delivered **seamless, zero-downtime deployments** of complex microservices and slashed operational overhead by **40%**. Scale your operations effortlessly and efficiently.
                 </p>
             </div>
             <div class="bg-gray-900 p-6 rounded-xl shadow-md border border-gray-700 hover:border-blue-500 hover:shadow-2xl transform hover:scale-105 transition-all duration-300" data-aos="fade-left" data-aos-delay="100">
                 <h4 class="text-xl font-semibold text-blue-300 mb-2">💡 Proactive Performance Optimization</h4>
                 <p class="text-gray-300">
-                    Deployed IBM Instana across a sprawling enterprise application landscape, providing real-time, AI-powered insights that allowed a major e-commerce platform to **proactively resolve 75% of performance bottlenecks** before impacting end-users.
+                    By deploying IBM Instana across a sprawling enterprise application landscape, we provided real-time, AI-powered insights that allowed a major e-commerce platform to **proactively resolve 75% of performance bottlenecks** *before* impacting end-users. Transform your performance monitoring from reactive to predictive.
                 </p>
             </div>
         </div>
@@ -229,6 +249,8 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <script>
     AOS.init({ duration: 1000, once: true });
+    // Initialize Lucide icons
+    lucide.createIcons();
 
     // Initialize Swiper for testimonials
     const swiper = new Swiper('.swiper', {
