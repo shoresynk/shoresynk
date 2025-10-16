@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Testimonials | ShoreSynk</title>
+    <title>Testimonials & AI-Driven Use Cases | ShoreSynk</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <style>
         .testimonial-card {
           transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -23,11 +23,8 @@
         .hero-background::before {
           content: "";
           position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          background-color: rgba(0, 0, 0, 0.6);
+          inset: 0;
+          background-color: rgba(0, 0, 0, 0.65);
         }
         .hero-content {
           position: relative;
@@ -37,6 +34,7 @@
 </head>
 <body class="bg-gray-900 text-white font-sans">
 
+<!-- HEADER -->
 <header class="bg-gray-800 shadow-md sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
         <a href="index.html" class="flex items-center space-x-3">
@@ -46,7 +44,7 @@
         <nav class="hidden md:flex space-x-6 text-sm">
             <a href="index.html" class="hover:text-blue-400">Home</a>
             <a href="about.html" class="hover:text-blue-400">About Us</a>
-            <a href="integration.html" class="hover:text-blue-400">Integration</a>
+            <a href="automation.html" class="hover:text-blue-400">Automation</a>
             <a href="devops.html" class="hover:text-blue-400">DevOps</a>
             <a href="testimonials.html" class="text-white font-semibold">Testimonials</a>
             <a href="index.html#contact" class="hover:text-blue-400">Contact</a>
@@ -57,80 +55,139 @@
             </svg>
         </button>
     </div>
+
+    <!-- MOBILE MENU -->
     <nav id="mobile-menu" class="hidden md:hidden flex-col items-center pb-4 space-y-3 bg-gray-800 border-t border-gray-700">
         <a href="index.html" class="block text-white hover:text-blue-400 transition py-2">Home</a>
         <a href="about.html" class="block text-white hover:text-blue-400 transition py-2">About Us</a>
-        <a href="integration.html" class="block text-white hover:text-blue-400 transition py-2">Integration</a>
+        <a href="automation.html" class="block text-white hover:text-blue-400 transition py-2">Automation</a>
         <a href="devops.html" class="block text-white hover:text-blue-400 transition py-2">DevOps</a>
         <a href="testimonials.html" class="block text-white hover:text-blue-400 transition py-2">Testimonials</a>
         <a href="index.html#contact" class="block text-white hover:text-blue-400 transition py-2">Contact</a>
     </nav>
 </header>
 
+<!-- HERO SECTION -->
 <section class="py-20 text-center px-6 hero-background">
     <div class="hero-content">
-        <h2 class="text-4xl sm:text-5xl font-extrabold text-blue-400 mb-4" data-aos="fade-up">What Our Clients Say</h2>
+        <h2 class="text-4xl sm:text-5xl font-extrabold text-blue-400 mb-4" data-aos="fade-up">
+            AI-Powered DevOps Success Stories
+        </h2>
         <p class="text-lg sm:text-xl max-w-3xl mx-auto mb-10 text-white" data-aos="fade-up" data-aos-delay="100">
-            Hear directly from businesses that have transformed their operations with ShoreSynk's expertise in DevOps, integration, and modernization.
+            Discover how ShoreSynk is combining <span class="text-blue-300 font-semibold">Agentic AI, LLMs, Kubernetes, ArgoCD, and intelligent pipelines</span>
+            to redefine enterprise DevOps and automation for clients across the world.
         </p>
     </div>
 </section>
 
+<!-- USE CASES & TESTIMONIALS -->
 <section class="py-16 bg-gray-900 text-center px-6">
-    <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
+    <div class="max-w-6xl mx-auto grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+
+        <!-- Use Case 1 -->
         <div class="bg-gray-800 p-6 rounded-lg testimonial-card" data-aos="fade-up">
-            <p class="italic">“ShoreSynk helped us automate our entire CI/CD pipeline on AKS. Their expertise in GitHub Actions and Helm deployments was invaluable.”</p>
-            <p class="mt-4 font-semibold text-blue-300">– Jamie L., CTO, OceanNet Systems</p>
+            <h4 class="text-xl font-semibold text-blue-300 mb-3">Financial Sector – Autonomous CI/CD</h4>
+            <p class="italic">
+                “Using ArgoCD with Kubernetes and ShoreSynk’s Agentic AI controllers, we reduced human intervention by 80%.
+                Our AI agents now automatically trigger deployments, analyze logs, and roll back intelligently when anomalies are detected.”
+            </p>
+            <p class="mt-4 font-semibold text-blue-400">– CTO, FinEdge Banking Group</p>
         </div>
+
+        <!-- Use Case 2 -->
         <div class="bg-gray-800 p-6 rounded-lg testimonial-card" data-aos="fade-up" data-aos-delay="100">
-            <p class="italic">“Our B2B integrations have never been smoother. ShoreSynk transformed our IBM Sterling setup and onboarded partners twice as fast.”</p>
-            <p class="mt-4 font-semibold text-blue-300">– Ricardo M., Integration Lead, TradeBridge Ltd</p>
+            <h4 class="text-xl font-semibold text-blue-300 mb-3">Retail AI & Observability Pipelines</h4>
+            <p class="italic">
+                “ShoreSynk integrated LLM-powered observability into our Grafana dashboards.
+                Now, an AI assistant summarizes incidents, predicts failures, and recommends remediations across microservices deployed in AKS.”
+            </p>
+            <p class="mt-4 font-semibold text-blue-400">– Priya K., Platform Manager, RetailWave</p>
         </div>
+
+        <!-- Use Case 3 -->
         <div class="bg-gray-800 p-6 rounded-lg testimonial-card" data-aos="fade-up" data-aos-delay="200">
-            <p class="italic">“The DevOps observability dashboard they built with Instana is a game-changer. We now catch issues before they hit production.”</p>
-            <p class="mt-4 font-semibold text-blue-300">– Priya K., Platform Manager, RetailWave</p>
+            <h4 class="text-xl font-semibold text-blue-300 mb-3">Logistics – Intelligent Integration Hub</h4>
+            <p class="italic">
+                “By deploying MCP servers orchestrated with Kubernetes and ShoreSynk’s automation pipelines,
+                we connected IoT devices, partner APIs, and ERP systems seamlessly.
+                LLM-based anomaly detection now flags data integrity issues in real time.”
+            </p>
+            <p class="mt-4 font-semibold text-blue-400">– Tobias F., CIO, NextTransit Logistics</p>
         </div>
+
+        <!-- Use Case 4 -->
         <div class="bg-gray-800 p-6 rounded-lg testimonial-card" data-aos="fade-up" data-aos-delay="300">
-            <p class="italic">“From containers to cloud, ShoreSynk guided our OpenShift migration flawlessly. Their team delivered on time and under budget.”</p>
-            <p class="mt-4 font-semibold text-blue-300">– Ahmed D., Head of Engineering, FinCore Group</p>
+            <h4 class="text-xl font-semibold text-blue-300 mb-3">Healthcare – Secure AI Workflows</h4>
+            <p class="italic">
+                “ShoreSynk deployed containerized MCP servers to power secure, compliant AI pipelines.
+                Agentic AI validates every transformation step, ensuring traceability and zero data leakage across environments.”
+            </p>
+            <p class="mt-4 font-semibold text-blue-400">– Emily R., Data Architect, MediSync Health</p>
         </div>
+
+        <!-- Use Case 5 -->
         <div class="bg-gray-800 p-6 rounded-lg testimonial-card" data-aos="fade-up" data-aos-delay="400">
-            <p class="italic">“Their ITX support during our modernization effort made a huge difference. We now process data faster with fewer errors.”</p>
-            <p class="mt-4 font-semibold text-blue-300">– Emily R., Data Architect, MediSync Health</p>
+            <h4 class="text-xl font-semibold text-blue-300 mb-3">Telecom – Predictive Deployment Optimization</h4>
+            <p class="italic">
+                “With ShoreSynk’s AI-optimized pipelines, we leverage real-time Kubernetes telemetry to predict and auto-scale resources.
+                Agentic LLM agents recommend configuration adjustments during heavy loads, reducing latency by 35%.”
+            </p>
+            <p class="mt-4 font-semibold text-blue-400">– Jamie L., VP Infrastructure, ConnectTel Group</p>
         </div>
+
+        <!-- Use Case 6 -->
         <div class="bg-gray-800 p-6 rounded-lg testimonial-card" data-aos="fade-up" data-aos-delay="500">
-            <p class="italic">“ShoreSynk is the kind of partner you want for mission-critical transformations. Strategic, responsive, and technically sharp.”</p>
-            <p class="mt-4 font-semibold text-blue-300">– Tobias F., CIO, NextTransit Logistics</p>
+            <h4 class="text-xl font-semibold text-blue-300 mb-3">Energy – Self-Healing Automation Pipelines</h4>
+            <p class="italic">
+                “Our entire DevOps ecosystem is now self-healing.
+                ShoreSynk’s integration of LLM-based monitoring with ArgoCD and GitHub Actions gives us predictive incident management and autonomous rollback orchestration.”
+            </p>
+            <p class="mt-4 font-semibold text-blue-400">– Ahmed D., Head of Cloud Operations, GridSmart Energy</p>
         </div>
+
     </div>
 </section>
 
+<!-- CALL TO ACTION -->
+<section class="bg-gray-800 py-16 text-center">
+    <h3 class="text-3xl font-bold text-blue-400 mb-6" data-aos="fade-up">
+        Ready to Build AI-Driven DevOps Pipelines?
+    </h3>
+    <p class="mb-4 max-w-3xl mx-auto text-gray-300" data-aos="fade-up" data-aos-delay="100">
+        Let ShoreSynk help you design an automation-first, AI-enhanced DevOps strategy powered by Kubernetes, ArgoCD, and intelligent Agentic systems.
+    </p>
+    <a href="mailto:info@shoresynk.com"
+       class="inline-block bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-lg font-semibold transition duration-300 transform hover:scale-105"
+       data-aos="fade-up" data-aos-delay="200">
+        Get in Touch
+    </a>
+</section>
+
+<!-- FOOTER -->
 <footer class="bg-gray-900 py-6 text-center text-gray-500 text-sm">
     &copy; 2025 ShoreSynk. All rights reserved.
 </footer>
 
+<!-- SCRIPTS -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init({ duration: 1000, once: true });
 
-    // Mobile menu toggle logic
     const mobileMenuButton = document.getElementById('mobile-menu-button');
     const mobileMenu = document.getElementById('mobile-menu');
 
-    // Only add event listener if both elements exist
     if (mobileMenuButton && mobileMenu) {
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-            mobileMenu.classList.toggle('mobile-menu-open'); // Ensure this class is toggled
-        });
+      mobileMenuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        mobileMenu.classList.toggle('mobile-menu-open');
+      });
 
-        // Close mobile menu when a link is clicked
-        mobileMenu.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
-                mobileMenu.classList.remove('mobile-menu-open');
-            });
+      mobileMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+          mobileMenu.classList.remove('mobile-menu-open');
         });
+      });
     }
 </script>
 
