@@ -28,6 +28,7 @@
 </head>
 <body class="bg-gray-950 text-white font-sans">
 
+<!-- HEADER -->
 <header class="bg-gray-800 shadow-lg sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
         <a href="index.html" class="flex items-center space-x-3 group">
@@ -35,7 +36,7 @@
             <span class="text-2xl font-extrabold text-blue-400 tracking-tight group-hover:text-blue-300 transition">ShoreSynk</span>
         </a>
         <nav class="hidden md:flex space-x-8 text-base">
-            <a href="index.html" class="hover:text-blue-400">Home</a>
+            <a href="index.html" class="font-semibold text-blue-400">Home</a>
             <a href="about.html" class="hover:text-blue-400">About Us</a>
             <a href="automation.html" class="hover:text-blue-400">Automation</a>
             <a href="devops.html" class="hover:text-blue-400">DevOps</a>
@@ -49,6 +50,7 @@
         </button>
     </div>
 
+    <!-- Mobile menu -->
     <nav id="mobile-menu" class="md:hidden flex-col items-center pb-4 space-y-3 bg-gray-800 border-t border-gray-700">
         <a href="index.html" class="block text-white hover:text-blue-400 py-2">Home</a>
         <a href="about.html" class="block text-white hover:text-blue-400 py-2">About Us</a>
@@ -59,31 +61,55 @@
     </nav>
 </header>
 
+<!-- HERO SECTION -->
 <section class="relative py-28 text-center text-white overflow-hidden">
     <img src="https://tse4.mm.bing.net/th/id/OIP.Zzp7vDEHLs-ldM_Fr9gBeAHaE-?pid=Api"
-         alt="Tech automation background"
+         alt="Automation technology background"
          class="absolute inset-0 w-full h-full object-cover opacity-40">
     <div class="absolute inset-0 bg-black opacity-40"></div>
     <div class="relative z-10 max-w-5xl mx-auto px-6 animate-fade-in-up">
-        <h1 class="text-5xl md:text-6xl font-extrabold mb-6">Accelerate Your Digital Transformation</h1>
+        <h1 class="text-5xl md:text-6xl font-extrabold mb-6">Empowering Your Business Through Automation</h1>
         <div class="rotating-text-container">
             <span id="rotating-headline" class="text-3xl md:text-4xl rotating-text"></span>
         </div>
         <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto">
-            At ShoreSynk, we engineer seamless, secure, and scalable solutions that drive automation, efficiency, and innovation across your enterprise.
-            We are your dedicated partners in mastering intelligent automation and modern software delivery.
+            At ShoreSynk, we deliver intelligent automation solutions and DevOps practices that simplify complexity, accelerate delivery, and enhance resilience.
+            Our goal is to help you build, scale, and automate your digital ecosystem with precision and innovation.
         </p>
-        <a href="mailto:info@shoresynk.com" class="btn-gradient px-8 py-4 rounded-xl font-bold text-lg hover:scale-105 transition">Unlock Your Potential Today</a>
+        <a href="mailto:info@shoresynk.com" class="btn-gradient px-8 py-4 rounded-xl font-bold text-lg hover:scale-105 transition">Get Started</a>
     </div>
 </section>
 
-<!-- (Your services and content sections remain the same except any “Integration” word replaced with “Automation”) -->
+<!-- FEATURE SECTION -->
+<section class="py-20 bg-gray-900">
+    <div class="max-w-7xl mx-auto px-4">
+        <h2 class="text-4xl md:text-5xl font-bold text-center text-blue-400 mb-14">Our Core Automation Capabilities</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <div class="bg-gray-800 p-8 rounded-xl shadow-lg border border-gray-700 hover:border-blue-500 hover:shadow-2xl transition-all duration-300" data-aos="fade-up">
+                <i data-lucide="bot" class="text-blue-300 w-8 h-8 mb-4"></i>
+                <h3 class="text-2xl font-semibold text-blue-300 mb-3">Intelligent Automation</h3>
+                <p class="text-gray-300">Streamline repetitive tasks and workflows using intelligent automation frameworks built on Python, PowerShell, and Ansible. We transform manual operations into seamless, reliable, and scalable systems.</p>
+            </div>
+            <div class="bg-gray-800 p-8 rounded-xl shadow-lg border border-gray-700 hover:border-blue-500 hover:shadow-2xl transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+                <i data-lucide="settings" class="text-blue-300 w-8 h-8 mb-4"></i>
+                <h3 class="text-2xl font-semibold text-blue-300 mb-3">CI/CD & GitOps Automation</h3>
+                <p class="text-gray-300">Automate your build, test, and deployment pipelines using GitHub Actions, Argo CD, and Jenkins. We deliver GitOps-driven workflows to achieve consistent, fast, and auditable releases.</p>
+            </div>
+            <div class="bg-gray-800 p-8 rounded-xl shadow-lg border border-gray-700 hover:border-blue-500 hover:shadow-2xl transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
+                <i data-lucide="cloud" class="text-blue-300 w-8 h-8 mb-4"></i>
+                <h3 class="text-2xl font-semibold text-blue-300 mb-3">Cloud & Infrastructure Automation</h3>
+                <p class="text-gray-300">Empower your cloud journey with Infrastructure as Code using Terraform and Kubernetes. We enable full lifecycle automation across Azure, AWS, and IBM Cloud environments.</p>
+            </div>
+        </div>
+    </div>
+</section>
 
+<!-- CONTACT SECTION -->
 <section class="bg-gray-950 py-16" id="contact">
     <div class="max-w-4xl mx-auto px-4 text-center" data-aos="fade-up">
         <h3 class="text-3xl sm:text-4xl font-bold mb-6 text-blue-400">Ready to Automate Your Enterprise?</h3>
         <p class="mb-8 text-base sm:text-lg text-gray-300">
-            Partner with ShoreSynk and unlock your organization's full potential. Let's discuss how our specialized DevOps and Automation expertise can drive your success.
+            Partner with ShoreSynk and unlock your organization’s potential through automation and DevOps excellence.
         </p>
         <p class="mb-4 text-lg sm:text-xl font-medium">
             Email: <a href="mailto:info@shoresynk.com" class="text-blue-300 underline hover:text-blue-400">info@shoresynk.com</a>
@@ -92,6 +118,7 @@
     </div>
 </section>
 
+<!-- FOOTER -->
 <footer class="bg-gray-900 py-6 text-center text-gray-500 text-sm border-t border-gray-700">
     &copy; 2025 ShoreSynk. All rights reserved.
 </footer>
@@ -120,27 +147,24 @@
     const headlines = [
       "Elite DevOps & Automation Consultancy",
       "Mastering Intelligent Automation Delivery",
-      "Driving Unparalleled Efficiency with AI & Automation",
-      "Scaling Self-Healing Systems and Cloud Workflows",
-      "Unlocking Agility with Automated Cloud Solutions"
+      "Driving Efficiency Through Smart Automation",
+      "Scaling Self-Healing Cloud Workflows",
+      "Unlocking Agility with Automated Solutions"
     ];
-    let currentHeadlineIndex = 0;
-    const rotatingHeadlineElement = document.getElementById('rotating-headline');
-
-    function updateRotatingHeadline() {
-      rotatingHeadlineElement.classList.remove('fade-in');
-      rotatingHeadlineElement.classList.add('fade-out');
+    let i = 0;
+    const rotatingHeadline = document.getElementById('rotating-headline');
+    rotatingHeadline.textContent = headlines[i];
+    rotatingHeadline.classList.add('fade-in');
+    setInterval(() => {
+      rotatingHeadline.classList.remove('fade-in');
+      rotatingHeadline.classList.add('fade-out');
       setTimeout(() => {
-        currentHeadlineIndex = (currentHeadlineIndex + 1) % headlines.length;
-        rotatingHeadlineElement.textContent = headlines[currentHeadlineIndex];
-        rotatingHeadlineElement.classList.remove('fade-out');
-        rotatingHeadlineElement.classList.add('fade-in');
+        i = (i + 1) % headlines.length;
+        rotatingHeadline.textContent = headlines[i];
+        rotatingHeadline.classList.remove('fade-out');
+        rotatingHeadline.classList.add('fade-in');
       }, 1000);
-    }
-
-    rotatingHeadlineElement.textContent = headlines[currentHeadlineIndex];
-    rotatingHeadlineElement.classList.add('fade-in');
-    setInterval(updateRotatingHeadline, 4000);
+    }, 4000);
 </script>
 
 </body>
